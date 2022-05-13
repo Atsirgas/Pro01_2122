@@ -18,6 +18,6 @@ Durant el projecte ens comprometem a:
 </ul>
 
 
-frimat per:
+firmat per:
 
 Pol Garcia Sagristà
