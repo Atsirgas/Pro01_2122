@@ -8,4 +8,9 @@ Joel Vicente Corral
 
 Durant el projecte ens comprometem a:
 
-<h1 style="color:red;"> hola </h1>
+<ul>
+  <li> xxxx </li>
+  <li> xxxx </li>
+  <li> xxxx </li>
+  <li> xxxx </li>
+</ul>
