@@ -8,4 +8,6 @@ Joel Vicente Corral
 
 Durant el projecte ens comprometem a:
 
-<h1> hola </h1>
+<ul>
+  <li> hola </li>
+</ul>
