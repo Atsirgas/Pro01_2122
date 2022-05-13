@@ -15,5 +15,9 @@ Durant el projecte ens comprometem a:
   <li> Si un company es distreu avisar-lo </li>
   <li> Voler donar el 100% </li>
   <li>  </li>
-  <li>  </li>
 </ul>
+
+
+frimat per:
+
+Pol Garcia Sagristà
