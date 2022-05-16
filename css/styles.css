@@ -138,4 +138,55 @@ html {
 }
 
 
-/*  */
+/* Clases */
+
+.recuadro {
+    width: 100%;
+    height: 100%;
+    background-color: #116079;
+    position: relative;
+    border-radius: 30px;
+    padding: 3vw;
+}
+
+
+/* Paddings */
+
+.padding-3 {
+    padding: 6vw;
+    width: 100%;
+}
+
+
+/* Tablas */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: transparent;
+}
+
+
+/* Imagenes */
+
+.imagen-edit-borr {
+    width: 1vw;
+}
+
+
+/* Colores */
+
+.color-act a {
+    color: #000000;
+}

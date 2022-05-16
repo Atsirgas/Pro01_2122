@@ -12,11 +12,12 @@
 
     
     <?php
+    include "../conexion.php";
     if(isset($_POST["button"])){
         if(isset($_POST["correo"])&& isset($_POST["psw"])){
             $correo=$_POST["correo"];
             $password=sha1($_POST["psw"]);
-            $connection = mysqli_connect('localhost', 'root', '', 'curs');
+            
             $comprobar= "SELECT * FROM tbl_admin WHERE email_admin = '{$correo}' AND password_admin = '{$password}';";
             $cons = mysqli_query($connection,$comprobar);
             $num = mysqli_num_rows($cons);
@@ -24,7 +25,7 @@
                 session_start();
                 $_SESSION["email_usu"]=$correo;
                 
-                header("Location:./mostrar.php");
+                header("Location:./mostrar.php?id=alu");
             }else {
                 ?>
             <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
