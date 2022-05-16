@@ -23,11 +23,13 @@ if(!isset($_SESSION["email_usu"])){
             <?php
                 /* echo $_SESSION["email_usu"]; */
                 include '../conexion.php';
+                
                 if(isset($_GET['id'])&& ($_GET['id'])=="alu"){
                     $sql = "SELECT * FROM tbl_alumne;";
                     $listadodept= mysqli_query($connection, $sql);
                     echo "<a href='./mostrar.php?id=alu' class='btn btn-info btn-lg active' role='button' aria-pressed='true'>Alumnes</a>";
                     echo "<a href='./mostrar.php?id=prof' class='btn btn-primary btn-lg active' role='button' aria-pressed='true'>Professors</a>";
+                    echo "<a href='./mostrar.php?id=alu' class='btn btn-danger btn-lg active posicion-logout' role='button' aria-pressed='true'>Logout</a>";
                     echo '<br>';
                     echo '<br>';
                     echo '<table>';
@@ -55,8 +57,8 @@ if(!isset($_SESSION["email_usu"])){
                 
                         ?>
                         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-                        <td><button class="btn btn-danger" onClick="aviso('./borrar.php?id=<?php echo $alumno['id']; ?>');" ><img class="imagen-edit-borr" src="../img/trash.svg" alt=""></button></td>
-                        <td><button class="btn btn-info" onClick="aviso('./modificar.php?id=<?php echo $alumno['id']; ?>');" ><img class="imagen-edit-borr" src="../img/editar.png" alt=""></button></td>
+                        <td><button class="btn btn-danger" onClick="aviso('./borrar.php?id=<?php echo $alumno['id_alumne']; ?>');" ><img class="imagen-edit-borr" src="../img/trash.svg" alt=""></button></td>
+                        <td><button class="btn btn-info" onClick="aviso('./modificar.php?id=<?php echo $alumno['id_alumne']; ?>');" ><img class="imagen-edit-borr" src="../img/editar.png" alt=""></button></td>
                 
                         </tr>
                         
@@ -84,20 +86,20 @@ if(!isset($_SESSION["email_usu"])){
                     echo '<th>Modificar</th>';
                     echo '</tr>';
 
-                    foreach ($listadodept as $alumno) {
+                    foreach ($listadodept as $professors) {
                         echo '<tr>';                    
-                        echo "<td>{$alumno['id_professor']}</td>";
-                        echo "<td>{$alumno['cognom1_prof']}</td>";
-                        echo "<td>{$alumno['cognom2_prof']}</td>";
-                        echo "<td>{$alumno['nom_prof']}</td>";
-                        echo "<td>{$alumno['telf']}</td>";
-                        echo "<td>{$alumno['email_prof']}</td>";
-                        echo "<td>{$alumno['dept']}</td>";
+                        echo "<td>{$professors['id_professor']}</td>";
+                        echo "<td>{$professors['cognom1_prof']}</td>";
+                        echo "<td>{$professors['cognom2_prof']}</td>";
+                        echo "<td>{$professors['nom_prof']}</td>";
+                        echo "<td>{$professors['telf']}</td>";
+                        echo "<td>{$professors['email_prof']}</td>";
+                        echo "<td>{$professors['dept']}</td>";
                 
                         ?>
                         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-                        <td><button class="btn btn-danger" onClick="aviso('./borrar.php?id=<?php echo $alumno['id']; ?>');" ><img class="imagen-edit-borr" src="../img/trash.svg" alt=""></button></td>
-                        <td><button class="btn btn-info" onClick="aviso('./modificar.php?id=<?php echo $alumno['id']; ?>');" ><img class="imagen-edit-borr" src="../img/editar.png" alt=""></button></td>
+                        <td><button class="btn btn-danger" onClick="aviso('./borrar.php?id=<?php echo $$professors['id_professor']; ?>');" ><img class="imagen-edit-borr" src="../img/trash.svg" alt=""></button></td>
+                        <td><button class="btn btn-info" onClick="aviso('./modificar.php?id=<?php echo $$professors['id_professor']; ?>');" ><img class="imagen-edit-borr" src="../img/editar.png" alt=""></button></td>
                 
                         </tr>
                         

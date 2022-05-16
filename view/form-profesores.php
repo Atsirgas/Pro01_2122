@@ -20,8 +20,8 @@
 
     <!-- Nombre -->
     <div class="col-md-4 mb-3">
-      <label for="validationCustom01">Nombre</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Inserta tu nombre..." required>
+      <label for="PR-validacionNombre">Nombre</label>
+      <input type="text" class="form-control" id="PR-validacionNombre" placeholder="Inserta tu nombre..." required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -29,8 +29,8 @@
 
     <!-- Primer apellido -->
     <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Primer apellido</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Inserte su apellido..." required>
+      <label for="PR-validacionApellido01">Primer apellido</label>
+      <input type="text" class="form-control" id="PR-validacionApellido01" placeholder="Inserte su apellido..." required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -38,8 +38,8 @@
 
     <!-- Segundo apellido -->
     <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Segundo apellido</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Inserte su segundo apellido..." required>
+      <label for="PR-validacionApellido02">Segundo apellido</label>
+      <input type="text" class="form-control" id="PR-validacionApellido02" placeholder="Inserte su segundo apellido..." required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -47,19 +47,19 @@
 
     <!-- Email -->
     <div class="col-md-4 mb-3">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Inserte su Email...">
+            <label for="PR-validacionEmail">Email</label>
+            <input type="email" class="form-control" id="PR-validacionEmail" placeholder="Inserte su Email...">
     </div>
 
     <!-- Teléfono -->
     <div class="col-md-4 mb-3">
-            <label for="inputPhone">Teléfono</label>
-            <input id="validationPhone" class="form-control" type="text" maxlength="5" placeholder="00000...">
+            <label for="PR-validacionTel">Teléfono</label>
+            <input id="PR-validacionTel" class="form-control" type="text" maxlength="5" placeholder="00000...">
     </div>
 
     <!-- Cursos -->
     <div class="form-group col-md-4 mb-3">
-    <label for="inputGrado">Grado</label>
+    <label>Grado</label>
     <select class="custom-select">
         <option selected>Elige una de las opciones</option>
         <option value="1">AF (Administración y Finanzas)</option>

@@ -190,3 +190,8 @@ tr:nth-child(even) {
 .color-act a {
     color: #000000;
 }
+
+.posicion-logout {
+    justify-content: flex-end;
+    margin-left: 1000px;
+}

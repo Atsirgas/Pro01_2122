@@ -20,8 +20,8 @@
 
     <!-- Nombre -->
     <div class="col-md-4 mb-3">
-      <label for="validacionNombre">Nombre</label>
-      <input type="text" class="form-control" id="validationNombre" placeholder="Inserta tu nombre..." required>
+      <label for="AL-validacionNombre">Nombre</label>
+      <input type="text" class="form-control" id="AL-validacionNombre" placeholder="Inserta tu nombre..." required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -29,8 +29,8 @@
 
     <!-- Primer apellido -->
     <div class="col-md-4 mb-3">
-      <label for="validacionApellido01">Primer apellido</label>
-      <input type="text" class="form-control" id="validacionApellido01" placeholder="Inserte su apellido..." required>
+      <label for="AL-validacionApellido01">Primer apellido</label>
+      <input type="text" class="form-control" id="AL-validacionApellido01" placeholder="Inserte su apellido..." required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -38,8 +38,8 @@
 
     <!-- Segundo apellido -->
     <div class="col-md-4 mb-3">
-      <label for="validacionApellido02">Segundo apellido</label>
-      <input type="text" class="form-control" id="validacionApellido02" placeholder="Inserte su segundo apellido..." required>
+      <label for="AL-validacionApellido02">Segundo apellido</label>
+      <input type="text" class="form-control" id="AL-validacionApellido02" placeholder="Inserte su segundo apellido..." required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -47,25 +47,25 @@
 
     <!-- DNI -->
     <div class="col-md-4 mb-3">
-    <label for="validacionDNI"> DNI </label>
-        <input type="text" class="form-control" id="validacionDNI" placeholder="Inserte su DNI..." required>
+    <label for="AL-validacionDNI"> DNI </label>
+        <input type="text" class="form-control" id="AL-validacionDNI" placeholder="Inserte su DNI..." required>
     </div>
 
     <!-- Email -->
     <div class="col-md-4 mb-3">
-            <label for="validacionEmail">Email</label>
-            <input type="email" class="form-control" id="validacionEmail" placeholder="Inserte su Email...">
+            <label for="AL-validacionEmail">Email</label>
+            <input type="email" class="form-control" id="AL-validacionEmail" placeholder="Inserte su Email...">
     </div>
 
     <!-- Teléfono -->
     <div class="col-md-4 mb-3">
-            <label for="validacionTel">Teléfono</label>
-            <input id="validacionTel" class="form-control" type="text" maxlength="5" placeholder="00000...">
+            <label for="AL-validacionTel">Teléfono</label>
+            <input id="AL-validacionTel" class="form-control" type="text" maxlength="5" placeholder="00000...">
     </div>
 
     <!-- Cursos -->
     <div class="form-group col-md-4 mb-3">
-    <label for="inputGrado">Clase</label><br>
+    <label>Clase</label><br>
     <select class="custom-select">
         <option selected>Elige una de las opciones</option>
         <option value="1">AF (Administración y Finanzas)</option>
