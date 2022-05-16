@@ -3,6 +3,16 @@ use curs;
 
 /* Creació de les taules*/ 
 
+CREATE TABLE IF NOT EXISTS tbl_admin(
+	id_admin int(5) NOT NULL AUTO_INCREMENT,
+	nom_admin varchar (20) NOT NULL,
+	cognom_admin varchar (20) NULL,
+	email_admin varchar(50) NOT NULL,
+	password_admin varchar(100) NOT NULL,
+	telf varchar (5) NULL, /* Son les extensions, per exemple: 32256*/
+	dept int(5) NOT NULL,
+	constraint pk_admin PRIMARY KEY (id_admin)
+);
 
 CREATE TABLE IF NOT EXISTS tbl_professor(
 	id_professor int(5) NOT NULL AUTO_INCREMENT,
@@ -42,7 +52,7 @@ CREATE TABLE IF NOT EXISTS tbl_dept(
 	constraint pk_imparteix PRIMARY KEY (id_dept)
 );
 
-/* Modificacions de les taules per cració de les FK*/
+/* Modificacions de les taules per creació de les FK*/
 
 ALTER TABLE tbl_alumne
     ADD CONSTRAINT alumne_classe_fk FOREIGN KEY (classe)
@@ -54,4 +64,8 @@ ALTER TABLE tbl_classe
 
 ALTER TABLE tbl_professor
     ADD CONSTRAINT prof_dept_fk FOREIGN KEY (dept)
+    REFERENCES tbl_dept(id_dept);
+
+ALTER TABLE tbl_admin
+    ADD CONSTRAINT admin_dept_fk FOREIGN KEY (dept)
     REFERENCES tbl_dept(id_dept);
