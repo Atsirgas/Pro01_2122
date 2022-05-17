@@ -79,3 +79,31 @@ INSERT INTO tbl_alumne (`dni_alu`,`nom_alu`,`cognom1_alu`,`cognom2_alu`,`telf_al
 
 
 -- INSERTS PROFES
+
+INSERT INTO tbl_professors (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof`,`telf`,`dept`) VALUES  
+("Paco","Gonzalo","Vicente","pagovi8@jpg.com","10010","3"),
+("Sergio","Rodriguez","Rodriguez","seroro3@jpg.com","10015","2"),
+("Paco","Vicente","Rodriguez","paviro3@jpg.com","10020","2"),
+("Joan","Felix","Velasco","jofeve9@jpg.com","10025","1"),
+("Paco","Velasco","Felix","pavefe1@jpg.com","10030","2"),
+("Alex","Garcia","Lopez","algalo4@jpg.com","10035","2"),
+("Joan","Velasco","Rodriguez","jovero9@jpg.com","10040","3"),
+("Alex","Gonzalo","Rodriguez","algoro6@jpg.com","10045","3"),
+("Joel","Felix","Garcia","jofega5@jpg.com","10050","2"),
+("Daniel","Velasco","Garcia","davega9@jpg.com","10055","2"),
+("Raul","Lopez","Felix","ralofe8@jpg.com","10060","3"),
+("Joan","Perez","Martinez","jopema8@jpg.com","10065","2"),
+("Kevin","Felix","Perez","kefepe8@jpg.com","10070","1"),
+("Joan","Felix","Rodriguez","jofero4@jpg.com","10075","2"),
+("Alex","Felix","Lopez","alfelo3@jpg.com","10080","2"),
+("Paco","Rodriguez","Vicente","parovi5@jpg.com","10085","3"),
+("Joan","Vicente","Velasco","jovive7@jpg.com","10090","2"),
+("Sergio","Perez","Vicente","sepevi7@jpg.com","10095","3"),
+("Sergio","Velasco","Perez","sevepe5@jpg.com","100100","2"),
+("Joan","Garcia","Sanchez","jogasa6@jpg.com","100105","2"),
+("Pol","Perez","Martinez","popema9@jpg.com","100110","2"),
+("Gerard","Gonzalo","Lopez","gegolo8@jpg.com","100115","1"),
+("Paco","Gonzalo","Lopez","pagolo9@jpg.com","100120","2"),
+("Raul","Sanchez","Rodriguez","rasaro2@jpg.com","100125","2"),
+("Joel","Garcia","Rodriguez","jogaro5@jpg.com","100130","4"),
+("Joel","Perez","Vicente","jopevi3@jpg.com","100135","4"),
