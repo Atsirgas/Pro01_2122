@@ -3,84 +3,85 @@ INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10002","Administracio i fi
 INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10003","Esports");
 INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10004","Gestio escola");
 
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20001","ASIX1/DAW1","1");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20002","ASIX2","2");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20003","DAW2","3");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20004","AF1","4");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20005","AF2","5");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20006","AI1","6");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20007","AI2","7");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20008","EAS1","8");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20009","EAS2","9");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20010","EF1","10");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20011","EF2","11");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20012","GA1","12");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20013","GA2","13");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20014","HBD1","14");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20015","HBD2","15");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20016","SMX1","16");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20017","SMX2","17");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20018","GUIA1","18");
-INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20019","GUIA2","19");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20001","ASIX1/DAW1","71");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20002","ASIX2","72");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20003","DAW2","53");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20004","AF1","54");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20005","AF2","55");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20006","AI1","56");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20007","AI2","57");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20008","EAS1","58");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20009","EAS2","59");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20010","EF1","60");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20011","EF2","61");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20012","GA1","62");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20013","GA2","63");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20014","HBD1","64");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20015","HBD2","65");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20016","SMX1","66");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20017","SMX2","67");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20018","GUIA1","68");
+INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20019","GUIA2","69");
 
 
 
 -- inserts alumnes
 
 INSERT INTO tbl_alumne (`dni_alu`,`nom_alu`,`cognom1_alu`,`cognom2_alu`,`telf_alu`,`email_alu`,`classe`) Values 
-("35418923G","Pol","Felix","Martinez","921053809","pofema10@jpg.com","20005"),
-("80126787P","Pol","Sanchez","Rodriguez","934273956","posaro6@jpg.com","20019"),
-("03877341R","Joan","Martinez","Martinez","625677379","jomama6@jpg.com","20005"),
-("14796780Y","Joan","Sanchez","Lopez","891579208","josalo9@jpg.com","20019"),
-("78007179B","Joel","Vicente","Velasco","981373252","jovive10@jpg.com","20008"),
-("41431260A","Joan","Felix","Velasco","620079837","jofeve5@jpg.com","20012"),
-("59751518W","Gerard","Martinez","Sanchez","652600287","gemasa6@jpg.com","20011"),
-("39515060W","Kevin","Sanchez","Vicente","839275448","kesavi10@jpg.com","20010"),
-("38424700A","Pol","Felix","Vicente","816253822","pofevi10@jpg.com","20019"),
-("24663221E","Gerard","Gonzalo","Gonzalo","922468017","gegogo2@jpg.com","20012"),
-("91418195A","Joan","Vicente","Felix","808562543","jovife3@jpg.com","20001"),
-("48552794R","Kevin","Gonzalo","Velasco","748800642","kegove4@jpg.com","20008"),
-("77768317G","Sergio","Rodriguez","Garcia","951670727","seroga6@jpg.com","20004"),
-("95952424N","Sergio","Felix","Perez","728858840","sefepe2@jpg.com","20003"),
-("20296770Y","Daniel","Lopez","Felix","880775289","dalofe10@jpg.com","20019"),
-("20526104F","Raul","Felix","Velasco","957836058","rafeve9@jpg.com","20014"),
-("91408916Q","Raul","Velasco","Garcia","659976594","ravega10@jpg.com","20012"),
-("38874830T","Kevin","Sanchez","Perez","861326952","kesape8@jpg.com","20002"),
-("35865963Q","Kevin","Perez","Lopez","616471874","kepelo6@jpg.com","20005"),
-("89366824W","Sergio","Felix","Rodriguez","850294323","sefero8@jpg.com","20013"),
-("90265147Z","Paco","Sanchez","Velasco","897071199","pasave4@jpg.com","20019"),
-("07411493L","Paco","Rodriguez","Velasco","946583540","parove4@jpg.com","20001"),
-("87817528D","Raul","Rodriguez","Sanchez","768084822","rarosa1@jpg.com","20006"),
-("11887918T","Raul","Gonzalo","Garcia","682880411","ragoga6@jpg.com","20015"),
-("49880357G","Sergio","Gonzalo","Sanchez","602344650","segosa9@jpg.com","20011"),
-("15016181X","Gerard","Sanchez","Sanchez","872273620","gesasa9@jpg.com","20007"),
-("62681152B","Joan","Garcia","Felix","768729697","jogafe1@jpg.com","20015"),
-("33697697Y","Alex","Lopez","Velasco","724960471","allove1@jpg.com","20007"),
-("23408220Q","Sergio","Felix","Gonzalo","768762408","sefego5@jpg.com","20019"),
-("85521394B","Kevin","Garcia","Vicente","802182760","kegavi8@jpg.com","20016"),
-("56443612W","Gerard","Rodriguez","Lopez","948830715","gerolo10@jpg.com","20018"),
-("59497084V","Daniel","Lopez","Rodriguez","887827522","daloro2@jpg.com","20018"),
-("07214751L","Raul","Vicente","Lopez","871701786","ravilo3@jpg.com","20016"),
-("50866720N","Kevin","Garcia","Sanchez","862166652","kegasa6@jpg.com","20001"),
-("46033552H","Raul","Gonzalo","Martinez","846805019","ragoma1@jpg.com","20009"),
-("06210686L","Joan","Martinez","Velasco","807949497","jomave10@jpg.com","20013"),
-("25331305W","Gerard","Lopez","Felix","637356014","gelofe5@jpg.com","20012"),
-("88538326X","Kevin","Vicente","Gonzalo","813417171","kevigo7@jpg.com","20013"),
-("76157091C","Daniel","Martinez","Velasco","751075102","damave10@jpg.com","20015"),
-("56601974D","Alex","Perez","Felix","871289083","alpefe5@jpg.com","20001"),
-("42531288X","Pol","Perez","Velasco","670506932","popeve1@jpg.com","20018"),
-("29108992P","Joel","Felix","Lopez","872539905","jofelo10@jpg.com","20015"),
-("01873319S","Alex","Lopez","Gonzalo","615842269","allogo5@jpg.com","20003"),
-("89275586M","Gerard","Sanchez","Lopez","840230187","gesalo9@jpg.com","20002"),
-("41594550Q","Alex","Velasco","Felix","679822951","alvefe10@jpg.com","20014"),
-("07099018E","Kevin","Gonzalo","Garcia","931693857","kegoga8@jpg.com","20011"),
-("87648944S","Sergio","Rodriguez","Lopez","747204053","serolo6@jpg.com","20018"),
-("26999826B","Joel","Gonzalo","Martinez","987374879","jogoma9@jpg.com","20007"),
+("80883822K","Alex","Sanchez","Gonzalo","936380478","falso","20"),
+("92920767P","Sergio","Garcia","Felix","741196633","segafe2@jpg.com","32"),
+("00693547M","Joan","Garcia","Perez","868665308","jogape1@jpg.com","24"),
+("99424656A","Pol","Martinez","Lopez","623035414","pomalo5@jpg.com","24"),
+("12882927Y","Joan","Lopez","Rodriguez","988900740","joloro9@jpg.com","22"),
+("35258445C","Alex","Perez","Lopez","706411939","alpelo2@jpg.com","36"),
+("18028867H","Joel","Vicente","Felix","875895722","jovife1@jpg.com","27"),
+("12799829F","Joel","Lopez","Garcia","615488378","jologa10@jpg.com","33"),
+("41854315L","Sergio","Felix","Perez","838033778","sefepe8@jpg.com","25"),
+("80612421C","Joel","Felix","Perez","919970780","jofepe7@jpg.com","25"),
+("71522317E","Pol","Garcia","Sanchez","983245293","pogasa3@jpg.com","28"),
+("04379667F","Pol","Gonzalo","Velasco","630933567","pogove1@jpg.com","22"),
+("74251971J","Gerard","Sanchez","Martinez","783476231","gesama4@jpg.com","23"),
+("62109694B","Joan","Perez","Velasco","623693405","jopeve7@jpg.com","25"),
+("48501545L","Daniel","Martinez","Vicente","815056835","damavi9@jpg.com","23"),
+("96178650X","Alex","Garcia","Martinez","920470558","algama5@jpg.com","36"),
+("25884751E","Paco","Gonzalo","Felix","631231714","pagofe5@jpg.com","29"),
+("83174988L","Joan","Felix","Lopez","638561080","jofelo7@jpg.com","32"),
+("79347207J","Joel","Vicente","Vicente","836697745","jovivi1@jpg.com","23"),
+("65186360J","Daniel","Martinez","Vicente","788649675","damavi8@jpg.com","34"),
+("54697844A","Sergio","Vicente","Felix","602325221","sevife3@jpg.com","29"),
+("41472404T","Kevin","Garcia","Garcia","987552724","kegaga9@jpg.com","36"),
+("54413714S","Daniel","Garcia","Felix","878775594","dagafe8@jpg.com","38"),
+("96827918B","Paco","Martinez","Perez","887906234","pamape8@jpg.com","25"),
+("27248134B","Raul","Perez","Rodriguez","703243226","rapero9@jpg.com","34"),
+("75424541C","Alex","Velasco","Velasco","987876156","alveve4@jpg.com","37"),
+("96739231N","Daniel","Gonzalo","Gonzalo","735478122","dagogo10@jpg.com","38"),
+("40206781K","Gerard","Rodriguez","Sanchez","773091721","gerosa10@jpg.com","23"),
+("95423797V","Gerard","Rodriguez","Lopez","852407804","gerolo5@jpg.com","34"),
+("89771236M","Alex","Sanchez","Lopez","969901068","alsalo4@jpg.com","35"),
+("83803512E","Gerard","Sanchez","Garcia","745325891","gesaga3@jpg.com","21"),
+("38653978V","Joel","Gonzalo","Felix","806749796","jogofe9@jpg.com","34"),
+("62092861Z","Paco","Martinez","Velasco","623612216","pamave2@jpg.com","23"),
+("11720583J","Sergio","Lopez","Martinez","818833264","seloma10@jpg.com","28"),
+("94814696W","Daniel","Vicente","Vicente","903617350","davivi3@jpg.com","25"),
+("26957959G","Joan","Sanchez","Velasco","607139030","josave5@jpg.com","37"),
+("47147746T","Sergio","Velasco","Garcia","699310166","sevega4@jpg.com","27"),
+("82374900D","Sergio","Vicente","Vicente","829018345","sevivi7@jpg.com","38"),
+("36395594A","Daniel","Perez","Velasco","771842563","dapeve10@jpg.com","33"),
+("72171603H","Daniel","Martinez","Perez","797554892","damape2@jpg.com","38"),
+("16308004S","Gerard","Lopez","Martinez","985584099","geloma10@jpg.com","23"),
+("80449853Q","Alex","Felix","Lopez","870375751","alfelo5@jpg.com","34"),
+("33287706J","Joel","Vicente","Martinez","964133224","jovima3@jpg.com","38"),
+("63666460E","Pol","Felix","Garcia","751135230","pofega2@jpg.com","22"),
+("10642967Q","Gerard","Martinez","Rodriguez","832440664","gemaro7@jpg.com","26"),
+("49331278G","Gerard","Perez","Martinez","653762307","gepema8@jpg.com","27"),
+("25916852S","Sergio","Perez","Sanchez","967785966","sepesa1@jpg.com","23"),
+("08820399Z","Alex","Martinez","Velasco","986613652","almave1@jpg.com","36");
+
 
 
 -- INSERTS PROFES
 
-INSERT INTO tbl_professors (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof`,`telf`,`dept`) VALUES  
+INSERT INTO tbl_professor (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof`,`telf`,`dept`) VALUES  
 ("Paco","Gonzalo","Vicente","pagovi8@jpg.com","10010","3"),
 ("Sergio","Rodriguez","Rodriguez","seroro3@jpg.com","10015","2"),
 ("Paco","Vicente","Rodriguez","paviro3@jpg.com","10020","2"),
@@ -99,11 +100,14 @@ INSERT INTO tbl_professors (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_pro
 ("Paco","Rodriguez","Vicente","parovi5@jpg.com","10085","3"),
 ("Joan","Vicente","Velasco","jovive7@jpg.com","10090","2"),
 ("Sergio","Perez","Vicente","sepevi7@jpg.com","10095","3"),
-("Sergio","Velasco","Perez","sevepe5@jpg.com","100100","2"),
-("Joan","Garcia","Sanchez","jogasa6@jpg.com","100105","2"),
-("Pol","Perez","Martinez","popema9@jpg.com","100110","2"),
-("Gerard","Gonzalo","Lopez","gegolo8@jpg.com","100115","1"),
-("Paco","Gonzalo","Lopez","pagolo9@jpg.com","100120","2"),
-("Raul","Sanchez","Rodriguez","rasaro2@jpg.com","100125","2"),
-("Joel","Garcia","Rodriguez","jogaro5@jpg.com","100130","4"),
-("Joel","Perez","Vicente","jopevi3@jpg.com","100135","4"),
+("Sergio","Velasco","Perez","sevepe5@jpg.com","10100","2"),
+("Joan","Garcia","Sanchez","jogasa6@jpg.com","10105","2"),
+("Pol","Perez","Martinez","popema9@jpg.com","10110","2"),
+("Gerard","Gonzalo","Lopez","gegolo8@jpg.com","10115","1"),
+("Paco","Gonzalo","Lopez","pagolo9@jpg.com","10120","2"),
+("Raul","Sanchez","Rodriguez","rasaro2@jpg.com","10125","2"),
+("Joel","Garcia","Rodriguez","jogaro5@jpg.com","10130","1"),
+("Joel","Perez","Vicente","jopevi3@jpg.com","10135","2");
+
+
+INSERT INTO tbl_admin (`nom_admin`,`email_admin`,`password_admin`,`telf`,`dept`) VALUES ("admin","admin@jpg.com","7110eda4d09e062aa5e4a390b0a572ac0d2c0220","55555","4");

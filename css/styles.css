@@ -175,6 +175,14 @@ html {
     padding-right: 2vw;
 }
 
+.padding-right2 {
+    padding-right: 0.5vw;
+}
+
+.posicion-search {
+    padding-left: 3vw;
+}
+
 
 /* Tablas */
 
@@ -206,16 +214,20 @@ tr:nth-child(even) {
     width: 6vw;
 }
 
+.plus {
+    padding-left: 1vw;
+}
+
+.plus a i {
+    width: 25px;
+    height: 25px;
+}
+
 
 /* Colores */
 
 .color-act a {
     color: #000000;
-}
-
-.posicion-logout {
-    justify-content: flex-end;
-    margin-left: 66vw;
 }
 
 
@@ -328,4 +340,93 @@ tr:nth-child(even) {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+/* Search */
+
+.container-4 {
+    overflow: hidden;
+    width: 20vw;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.container-4 input#search {
+    width: 20vw;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #fff;
+    padding-left: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-4 input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.container-4 button.icon {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background: #232833;
+    height: 50px;
+    width: 50px;
+    color: #4f5b66;
+    opacity: 0;
+    font-size: 10pt;
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.container-4:hover button.icon,
+.container-4:active button.icon,
+.container-4:focus button.icon {
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+
+.container-4:hover button.icon:hover {
+    background: white;
+}
+
+@media screen and (max-width: 1600px) {
+    .posicion-search {
+        padding-left: 6vw;
+    }
+    table {
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .imagen-edit-borr {
+        width: 4vw;
+    }
+    .imagen-logo {
+        width: 12vw;
+    }
+    table {
+        display: block;
+    }
+    /* .posicion-search {
+        width: 100%;
+    } */
 }

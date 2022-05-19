@@ -6,7 +6,6 @@ use curs;
 CREATE TABLE IF NOT EXISTS tbl_admin(
 	id_admin int(5) NOT NULL AUTO_INCREMENT,
 	nom_admin varchar (20) NOT NULL,
-	cognom_admin varchar (20) NULL,
 	email_admin varchar(50) NOT NULL,
 	password_admin varchar(100) NOT NULL,
 	telf varchar (5) NULL, /* Son les extensions, per exemple: 32256*/

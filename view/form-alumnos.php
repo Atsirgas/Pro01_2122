@@ -19,10 +19,12 @@
 <body>
 <div id="portada" class="padding-2">
   <div class="recuadro-alu">
-    <h3 style="width: 50%;">Formulario de Alumnos</h3>
+    <div class="flex">
+    <h3 style="width: 50%;"><b>Formulario de Alumnos</b></h3>
     <form action="./mostrar.php?id=alu" method="POST" enctype="multipart/form-data">
     <input type="submit" class="btn btn-primary" style="float: right;" value="Volver">
     </form>
+  </div>  
     <!-- Formulario de Bootstrap -->
 <form class="row g-3 needs-validation" novalidate action="./mostrar.php?id=alu" method="POST" enctype="multipart/form-data" onsubmit="return validaFormulario();">
   <div class="form-row">
