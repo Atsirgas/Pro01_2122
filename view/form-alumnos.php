@@ -88,5 +88,8 @@
 </form>
 </div>
 </div>
+<form action="../index.php" method="POST" enctype="multipart/form-data"  method="" action="" onsubmit="return validaFormulario();">
+    <input type="submit" class="btn btn-primary" value="Volver">
+    </form>
 </body>
 </html>
