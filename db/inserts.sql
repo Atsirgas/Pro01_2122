@@ -2,6 +2,8 @@ INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10001","Informatica");
 INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10002","Administracio i finances");
 INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10003","Esports");
 INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10004","Gestio escola");
+INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10005","Educacio");
+INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10006","Sanitari");
 
 INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20001","ASIX1/DAW1","71");
 INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20002","ASIX2","72");
@@ -77,7 +79,11 @@ INSERT INTO tbl_alumne (`dni_alu`,`nom_alu`,`cognom1_alu`,`cognom2_alu`,`telf_al
 ("25916852S","Sergio","Perez","Sanchez","967785966","sepesa1@jpg.com","23"),
 ("08820399Z","Alex","Martinez","Velasco","986613652","almave1@jpg.com","36");
 
-
+-- consulta per fer inserts alumnes (ad)
+select email_alu as Firstname, nom_alu as GivenName, cognom1_alu as SurName,  c.nom_classe as 'classe'
+from tbl_alumne 
+INNER JOIN tbl_classe c 
+ON classe = c.id_classe
 
 -- INSERTS PROFES
 
@@ -109,5 +115,28 @@ INSERT INTO tbl_professor (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof
 ("Joel","Garcia","Rodriguez","jogaro5@jpg.com","10130","1"),
 ("Joel","Perez","Vicente","jopevi3@jpg.com","10135","2");
 
+-- insertem mes profesors pels departaments afegits posteriorment
+INSERT INTO tbl_professor (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof`,`telf`,`dept`) VALUES  
+("Kevin","Garcia","Vicente","kegavi3@jpg.com","10010","5"),
+("Raul","Rodriguez","Vicente","rarovi5@jpg.com","10015","6"),
+("Raul","Gonzalo","Gonzalo","ragogo9@jpg.com","10020","5"),
+("Kevin","Felix","Perez","kefepe5@jpg.com","10025","6"),
+("Kevin","Lopez","Vicente","kelovi3@jpg.com","10030","5"),
+("Joan","Martinez","Martinez","jomama7@jpg.com","10035","5"),
+("Daniel","Perez","Vicente","dapevi3@jpg.com","10040","6");
 
-INSERT INTO tbl_admin (`nom_admin`,`email_admin`,`password_admin`,`telf`,`dept`) VALUES ("admin","admin@jpg.com","7110eda4d09e062aa5e4a390b0a572ac0d2c0220","55555","4");
+-- Consulta per fer inserts professors (ad)
+
+select email_prof as Name, nom_prof as FirstName, cognom1_prof as LastName, c.nom_dept as Grupo 
+from tbl_professor 
+INNER JOIN tbl_dept c  
+ON dept= c.id_dept;
+
+
+-- admins
+
+INSERT INT tbl_admin (`nom_admin`,`email_admin`,`password_admin`,`telf`,`dept`) VALUES ("admin","admin@jpg.com","7110eda4d09e062aa5e4a390b0a572ac0d2c0220","55555","4");
+
+-- aconsultar per fer insert admins (ad)
+
+select email_admin as Name, nom_admin as FirstName, password_admin as password, c.nom_dept as 'dept'  from tbl_admin INNER JOIN tbl_dept c  ON dept= c.id_dept ;

@@ -49,7 +49,7 @@ var validaFormulario = function() {
     if (validaTel == null || validaTel.length == 0 || /^\s+$/.test(validaTel)) {
         alert('[ERROR] "Teléfono" debe ser rellenado')
         validacion = false
-    } else if (!(/^\d{5}$/.test(validaTel))) {
+    } else if (!(/^\d{9}$/.test(validaTel))) {
         alert('[ERROR] "Teléfono" debe ser rellenado con el formato correcto')
         validacion = false;
     }

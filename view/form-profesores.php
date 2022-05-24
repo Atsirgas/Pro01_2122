@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="../css/styles.css">
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -21,64 +24,52 @@
   <div class="recuadro-alu">
     <div class="flex">
       <h3 style="margin-right: 20%;">Formulario de Profesores</h3>
-      <form action="./mostrar.php?id=alu" method="POST" enctype="multipart/form-data">
+      <form action="./mostrar.php?id=prof" method="POST" enctype="multipart/form-data">
       <input type="submit" class="btn btn-primary" style="float: right;" value="Volver">
       </form>
     </div>
     <!-- Formulario de Bootstrap -->
-<form class="row g-3 needs-validation" novalidate action="./mostrar.php?id=prof" method="POST" enctype="multipart/form-data" onsubmit="return validaFormulario();">
+<form class="row g-3 needs-validation" novalidate action="./recibirProfesores.php" method="POST" enctype="multipart/form-data" onsubmit="return validaFormulario();">
   <div class="form-row">
     <!-- Nombre -->
     <div class="col-md-8 mb-3">
       <label for="validacionNombre">Nombre</label>
-      <input type="text" class="form-control" id="validacionNombre" placeholder="Inserta tu nombre..." required>
+      <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserta tu nombre..." required>
     </div>
     <!-- Primer apellido -->
     <div class="col-md-8 mb-3">
       <label for="validacionApellido01">Primer apellido</label>
-      <input type="text" class="form-control" id="validacionApellido01" placeholder="Inserte su apellido..." required>
+      <input type="text" name="1apellido" class="form-control" id="validacionApellido01" placeholder="Inserte su apellido..." required>
     </div>
     <!-- Segundo apellido -->
     <div class="col-md-8 mb-3">
       <label for="validacionApellido02">Segundo apellido</label>
-      <input type="text" class="form-control" id="validacionApellido02" placeholder="Inserte su segundo apellido..." required>
+      <input type="text" name="2apellido" class="form-control" id="validacionApellido02" placeholder="Inserte su segundo apellido..." required>
     </div>
     <!-- Email -->
     <div class="col-md-8 mb-3">
             <label for="validacionEmail">Email</label>
-            <input type="email" class="form-control" id="validacionEmail" value="" placeholder="Inserte su Email..." required>
+            <input type="email" name="email" class="form-control" id="validacionEmail" value="" placeholder="Inserte su Email..." required>
     </div>
     <!-- Teléfono -->
     <div class="col-md-8 mb-3">
             <label for="validacionTel">Teléfono</label>
-            <input id="validacionTel" class="form-control" type="text" maxlength="5" placeholder="00000...">
+            <input id="validacionTel" name="telf" class="form-control" type="text" maxlength="5" placeholder="00000...">
     </div>
     <!-- Cursos -->
     <div class="form-group col-md-8 mb-3">
     <label>Grado</label><br>
-    <select class="custom-select" id="select">
+    <select name="grado" class=" btn-default btn-lg" id="select">
       <option selected value="" required>Elige una de las opciones</option>
-          <option value="1">AF1 (1o de Administración y Finanzas)</option>
-          <option value="2">AF2 (2o de Administración y Finanzas)</option>
-          <option value="3">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-          <option value="4">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-          <option value="5">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-          <option value="6">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-          <option value="7">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-          <option value="8">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-          <option value="9">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-          <option value="10">EF1 (1o de Eduación Infantil)</option>
-          <option value="11">EF2 (2o de Eduación Infantil)</option>
-          <option value="12">GA1 (1o de Gestión Administrativa)</option>
-          <option value="13">GA2 (2o de Gestión Administrativa)</option>
-          <option value="14">HBD1 (1o de Higiene Bucodental)</option>
-          <option value="15">HBD2 (2o de Higiene Bucodental)</option>
-          <option value="16">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-          <option value="17">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-          <option value="18">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-          <option value="19">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+          <option value="1">Informatica</option>
+          <option value="2">Administració i finances</option>
+          <option value="3">Esports</option>
+          <option value="5">Educació</option>
+          <option value="6">Sanitari</option>
     </select>
-    <input type="submit" class="btn btn-primary" value="Enviar">
+    <br>
+    <br>
+    <input name="button" type="submit" class="btn btn-primary" value="Enviar">
     </div>
 </form>
 </div>

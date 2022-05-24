@@ -26,62 +26,62 @@
     </form>
   </div>  
     <!-- Formulario de Bootstrap -->
-<form class="row g-3 needs-validation" novalidate action="./mostrar.php?id=alu" method="POST" enctype="multipart/form-data" onsubmit="return validaFormulario();">
+<form class="row g-3 needs-validation" novalidate action="./recibirAlumnos.php" method="POST" enctype="multipart/form-data" onsubmit="return validaFormulario();">
   <div class="form-row">
     <!-- Nombre -->
     <div class="col-md-8 mb-3">
       <label for="validacionNombre">Nombre</label>
-      <input type="text" class="form-control" id="validacionNombre" placeholder="Inserta tu nombre..." required>
+      <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserta tu nombre..." required>
     </div>
     <!-- Primer apellido -->
     <div class="col-md-8 mb-3">
       <label for="validacionApellido01">Primer apellido</label>
-      <input type="text" class="form-control" id="validacionApellido01" placeholder="Inserte su apellido..." required>
+      <input type="text" name="apellido01" class="form-control" id="validacionApellido01" placeholder="Inserte su apellido..." required>
     </div>
     <!-- Segundo apellido -->
     <div class="col-md-8 mb-3">
       <label for="validacionApellido02">Segundo apellido</label>
-      <input type="text" class="form-control" id="validacionApellido02" placeholder="Inserte su segundo apellido..." required>
+      <input type="text" name="apellido02" class="form-control" id="validacionApellido02" placeholder="Inserte su segundo apellido..." required>
     </div>
     <!-- DNI -->
     <div class="col-md-8 mb-3">
     <label for="validacionDNI"> DNI </label>
-        <input type="text" class="form-control" id="validacionDNI" placeholder="Inserte su DNI..." required>
+        <input type="text" name="dni" class="form-control" id="validacionDNI" placeholder="Inserte su DNI..." required>
     </div>
     <!-- Email -->
     <div class="col-md-8 mb-3">
             <label for="validacionEmail">Email</label>
-            <input type="email" class="form-control" id="validacionEmail" placeholder="Inserte su Email...">
+            <input type="email" name="email" class="form-control" id="validacionEmail" placeholder="Inserte su Email...">
     </div>
     <!-- Teléfono -->
     <div class="col-md-8 mb-3">
             <label for="validacionTel">Teléfono</label>
-            <input id="validacionTel" class="form-control" type="text" maxlength="5" placeholder="00000...">
+            <input id="validacionTel" name="telefono" class="form-control" type="text" maxlength="9" placeholder="000000000...">
     </div>
     <!-- Cursos -->
     <div class="form-group col-md-8 mb-3">
     <label>Clase</label><br>
-    <select class="custom-select" id="select">
+    <select name="clase" class="custom-select" id="select">
         <option selected value="">Elige una de las opciones</option>
-        <option value="1">AF1 (1o de Administración y Finanzas)</option>
-        <option value="2">AF2 (2o de Administración y Finanzas)</option>
-        <option value="3">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-        <option value="4">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-        <option value="5">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-        <option value="6">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-        <option value="7">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-        <option value="8">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-        <option value="9">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-        <option value="10">EF1 (1o de Eduación Infantil)</option>
-        <option value="11">EF2 (2o de Eduación Infantil)</option>
-        <option value="12">GA1 (1o de Gestión Administrativa)</option>
-        <option value="13">GA2 (2o de Gestión Administrativa)</option>
-        <option value="14">HBD1 (1o de Higiene Bucodental)</option>
-        <option value="15">HBD2 (2o de Higiene Bucodental)</option>
-        <option value="16">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-        <option value="17">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-        <option value="18">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-        <option value="19">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+        <option value="23">AF1 (1o de Administración y Finanzas)</option>
+        <option value="24">AF2 (2o de Administración y Finanzas)</option>
+        <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
+        <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
+        <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
+        <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
+        <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
+        <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
+        <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
+        <option value="29">EF1 (1o de Eduación Infantil)</option>
+        <option value="30">EF2 (2o de Eduación Infantil)</option>
+        <option value="31">GA1 (1o de Gestión Administrativa)</option>
+        <option value="32">GA2 (2o de Gestión Administrativa)</option>
+        <option value="33">HBD1 (1o de Higiene Bucodental)</option>
+        <option value="34">HBD2 (2o de Higiene Bucodental)</option>
+        <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
+        <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
+        <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+        <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
     </select>
     <input type="submit" class="btn btn-primary" style="float: right;" value="Enviar">
     </div>

@@ -15,8 +15,14 @@
 include '../conexion.php';
 
 if(isset($_GET['id_prof']) && ($_GET['id'])=="prof"){
+    $borrar_altertable="ALTER TABLE tbl_classe DROP FOREIGN KEY classe_prof_fk;";
+    $fk=mysqli_query($connection,$borrar_altertable);
     $sql = "DELETE FROM `tbl_professor` WHERE id_professor={$_GET['id_prof']};";
     $listaprofes = mysqli_query($connection,$sql);
+    $alter="ALTER TABLE tbl_classe 
+                ADD CONSTRAINT classe_prof_fk FOREIGN KEY (tutor) 
+                REFERENCES tbl_professor(id_professor);";
+    $añadir = mysqli_query($connection,$alter);
     ?>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
@@ -24,6 +30,7 @@ if(isset($_GET['id_prof']) && ($_GET['id'])=="prof"){
             Swal.fire({
                     title: 'Usuario borrado correctamente',
                     icon: 'success',
+                    background: '#f39c12',
                     confirmButtonColor: '#3085d6',
                     confirmButtonText: 'Volver'
                 })
@@ -47,6 +54,7 @@ if(isset($_GET['id_prof']) && ($_GET['id'])=="prof"){
             Swal.fire({
                     title: 'Usuario borrado correctamente',
                     icon: 'success',
+                    background: '#f39c12',
                     confirmButtonColor: '#3085d6',
                     confirmButtonText: 'Volver'
                 })

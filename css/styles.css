@@ -5,6 +5,11 @@
 
 body {
     margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -142,7 +147,7 @@ html {
 
 .recuadro {
     width: 100%;
-    height: 100%;
+    height: 80vh;
     background-color: #116079;
     position: relative;
     border-radius: 30px;
@@ -407,9 +412,269 @@ tr:nth-child(even) {
     background: white;
 }
 
+
+/* Boton file */
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Float cancel and delete buttons and add an equal width */
+
+.cancelbtn,
+.deletebtn {
+    float: left;
+    width: 50%;
+}
+
+
+/* Add a color to the cancel button */
+
+.cancelbtn {
+    background-color: #ccc;
+    color: black;
+}
+
+
+/* Add a color to the delete button */
+
+.deletebtn {
+    background-color: #f44336;
+}
+
+
+/* Add padding and center-align text to the container */
+
+.container {
+    padding: 16px;
+    text-align: center;
+}
+
+
+/* The Modal (background) */
+
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* padding-top: 50px; */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content2 {
+    background-color: #f39c12;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%;
+    /* height: 30vw; */
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Modal Close Button (x) */
+
+.close2 {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.modal-content2 {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
+/* Estilo del área del input[file] */
+
+.drag-drop {
+    height: 8em;
+    width: 8em;
+    background-color: #ccc;
+    border-radius: 4em;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin: 0 auto 1em;
+}
+
+.drag-drop span.desc {
+    display: block;
+    font-size: .7em;
+    padding: 0 .5em;
+    color: #000;
+}
+
+input[type="file"] {
+    height: 10em;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+
+/* Estilo del área del input[file] con :hover */
+
+.drag-drop:hover,
+input[type="file"]:hover {
+    background-color: #3276b1;
+    cursor: pointer;
+}
+
+.drag-drop:hover span.desc {
+    color: #fff;
+}
+
+.drag-drop:hover .pulsating {
+    animation: pulse1 1s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation: pulse1 1s linear infinite;
+    -webkit-animation-direction: alternate;
+}
+
+
+/* Composición del icono de Upload con FontAwesome */
+
+.fa-stack {
+    margin-top: .5em;
+}
+
+.fa-stack .top {
+    color: white;
+}
+
+.fa-stack .medium {
+    color: black;
+    text-shadow: 0 0 .25em #666;
+}
+
+.fa-stack .bottom {
+    color: rgba(225, 225, 225, .75);
+}
+
+
+/* Keyframing de la animación */
+
+@keyframes pulse1 {
+    0% {
+        color: rgba(225, 225, 225, .75);
+    }
+    50% {
+        color: rgba(225, 225, 225, 0.25);
+    }
+    100% {
+        color: rgba(225, 225, 225, .75);
+    }
+}
+
+@-moz-keyframes pulse1 {
+    0% {
+        color: rgba(225, 225, 225, .75);
+    }
+    50% {
+        color: rgba(225, 225, 225, 0.25);
+    }
+    100% {
+        color: rgba(225, 225, 225, .75);
+    }
+}
+
+@-webkit-keyframes pulse1 {
+    0% {
+        color: rgba(225, 225, 225, .75);
+    }
+    50% {
+        color: rgba(225, 225, 225, 0.25);
+    }
+    100% {
+        color: rgba(225, 225, 225, .75);
+    }
+}
+
+@-ms-keyframes pulse1 {
+    0% {
+        color: rgba(225, 225, 225, .75);
+    }
+    50% {
+        color: rgba(225, 225, 225, 0.25);
+    }
+}
+
+.oculto {
+    display: none;
+}
+
+.visible {
+    display: inline;
+}
+
+
+/* Change styles for cancel button and delete button on extra small screens */
+
+.nav-link2 {
+    display: block;
+    padding: 0.5rem 1rem;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .deletebtn {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1600px) {
     .posicion-search {
-        padding-left: 6vw;
+        padding-left: 4vw;
     }
     table {
         overflow-x: auto;
@@ -429,4 +694,38 @@ tr:nth-child(even) {
     /* .posicion-search {
         width: 100%;
     } */
+    .container-4 {
+        overflow: hidden;
+        width: 100%;
+        vertical-align: middle;
+        white-space: nowrap;
+        padding: 0;
+    }
+    .container-4 input#search {
+        width: 100%;
+        height: 50px;
+        background: #2b303b;
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: #fff;
+        padding-left: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        display: flex;
+        text-align: center;
+    }
+    .recuadro {
+        height: 90vh;
+        position: relative;
+        border-radius: 30px;
+        padding: 3vw;
+    }
+    .plus {
+        padding-left: 0;
+    }
+    .posicion-search {
+        padding-left: 0vw;
+    }
 }
