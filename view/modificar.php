@@ -88,15 +88,15 @@
                 <option value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
-            } elseif ($value == "Administracio i finances") {
+            } elseif ($valor == "Administracio i finances") {
                 ?>
                 <option value="1">Informatica</option>
-                <option selected="selected" value="2">Administracio i finances</option>
+                <option selected="selected" value="2">Administració i finances</option>
                 <option value="3">Esports</option>
                 <option value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
-            } elseif ($value == "Esports") {
+            } elseif ($valor == "Esports") {
                 ?>
                 <option value="1">Informatica</option>
                 <option value="2">Administracio i finances</option>
@@ -104,7 +104,7 @@
                 <option value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
-            } elseif ($value == "Educacio") {
+            } elseif ($valor == "Educacio") {
                 ?>
                 <option value="1">Informatica</option>
                 <option value="2">Administracio i finances</option>
@@ -112,7 +112,7 @@
                 <option selected="selected" value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
-            } elseif ($value == "Sanitari") {
+            } elseif ($valor == "Sanitari") {
                 ?>
                 <option value="1">Informatica</option>
                 <option value="2">Administracio i finances</option>

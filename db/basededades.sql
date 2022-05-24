@@ -24,6 +24,9 @@ CREATE TABLE IF NOT EXISTS tbl_professor(
 	constraint pk_professor PRIMARY KEY (id_professor)
 );
 
+ALTER TABLE tbl_professor 
+ADD password_prof varchar(100) NOT NULL,
+
 CREATE TABLE IF NOT EXISTS tbl_classe (
 	id_classe int(5) NOT NULL AUTO_INCREMENT,
 	codi_classe varchar(5) NOT NULL,

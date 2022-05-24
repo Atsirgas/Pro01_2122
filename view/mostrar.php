@@ -3,6 +3,13 @@ session_start();
 if(!isset($_SESSION["email_usu"])){
     header("Location:../index.php");
 }
+if(!isset($_REQUEST['id']) OR isset($_REQUEST['id'])!="alu" OR isset($_REQUEST['id'])!="prof"){
+    header("Location:./mostrar.php?id=alu");
+}
+include '../conexion.php';
+$departamento="SELECT dept FROM tbl_admin WHERE email_admin={$_SESSION['email_usu']};";
+$dept=mysqli_query($connection, $departamento);
+/* print_r($dept); */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +33,7 @@ if(!isset($_SESSION["email_usu"])){
         <div class="recuadro">
             <?php
                 /* echo $_SESSION["email_usu"]; */
-                include '../conexion.php';
+                
                 $cantPorPagina = 6;
                 
 
@@ -289,7 +296,7 @@ if(!isset($_SESSION["email_usu"])){
                     }else{
                         ?><p style="margin-left: 50%; margin-top: -1%;"><?php echo "Hi han $numFilas registres";?></p><?php
                     }
-                    echo '<br>';
+                    
                     echo '<br>';
                     echo '<table class="table-hover">';
                     echo '<tr>';
@@ -303,6 +310,7 @@ if(!isset($_SESSION["email_usu"])){
                     echo '<th>Classe</th>';
                     echo '<th>Borrar</th>';
                     echo '<th>Modificar</th>';
+                    echo '<th>Seleccionar</th>';
                     echo '</tr>';
                     
                     foreach ($querypaga2 as $alumno) {
@@ -316,12 +324,16 @@ if(!isset($_SESSION["email_usu"])){
                         echo "<td>{$alumno['dni_alu']}</td>";
                         echo "<td>{$alumno['nom_classe']}</td>";
                 
+                        if($_SESSION['email_usu']){
+
+                        }
                         ?>
+                        
                         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
                         <td><button class="btn btn-danger" onClick="aviso('./borrar.php?id=alu&id_alu=<?php echo $alumno['id_alumne'];?>' , '<?php echo $alumno['nom_alu'];?>');" ><img class="imagen-edit-borr" src="../img/trash.svg" alt=""></button></td>
                         <td><button class="btn btn-info" onClick="aviso2('./modificar.php?id=alu&clase=<?php echo $alumno['nom_classe'];?>&id_alu=<?php echo $alumno['id_alumne'];?>' , '<?php echo $alumno['nom_alu'];?>');" ><img class="imagen-edit-borr" src="../img/editar.png" alt=""></button></td>
+                        <td><button class="btn btn-warning" onClick="avisocorreo('./enviarcorreo.php?id=alu&clase=<?php echo $alumno['nom_classe'];?>&id_alu=<?php echo $alumno['id_alumne'];?>' , '<?php echo $alumno['nom_alu'];?>');" ><img class="imagen-edit-borr" src="../img/email.svg" alt=""></button></td>
                         </tr>
-                        
                         <?php
                     }
                         echo '</table>';
@@ -604,6 +616,24 @@ function aviso(url, nom) {
     Swal.fire({
         title: "¿Estas segur de que vols borrar l'usuari  " +nom+'?',
         imageUrl: '../img/trash.svg',
+        imageWidth: 200,
+        imageHeight: 200,
+        showCancelButton: true,
+        confirmButtonColor: 'green',
+        cancelButtonColor: '#d33',
+        background: '#f39c12',
+        confirmButtonText: 'Si',
+        cancelButtonText: 'Cancelar'
+        }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = url;
+        }
+        })
+}
+function avisocorreo(url, nom) {
+    Swal.fire({
+        title: "¿Vols enviar un correu a  " +nom+'?',
+        imageUrl: '../img/email.svg',
         imageWidth: 200,
         imageHeight: 200,
         showCancelButton: true,

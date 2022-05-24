@@ -115,6 +115,47 @@ INSERT INTO tbl_professor (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof
 ("Joel","Garcia","Rodriguez","jogaro5@jpg.com","10130","1"),
 ("Joel","Perez","Vicente","jopevi3@jpg.com","10135","2");
 
+-- actualitzacio contraseña 
+
+ALTER TABLE tbl_professor 
+ADD password_prof 
+varchar(100) NOT NULL,
+
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  53;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  54;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  55;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  56;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  57;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  58;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  59;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  60;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  61;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  62;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  63;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  64;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  65;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  66;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  67;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  68;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  69;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  70;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  71;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  72;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  73;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  74;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  75;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  76;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  77;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  78;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  79;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  80;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  81;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  82;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  83;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  84;
+UPDATE `tbl_professor` SET `password_prof`='7110eda4d09e062aa5e4a390b0a572ac0d2c0220' WHERE id_professor =  85;
+
+
 -- insertem mes profesors pels departaments afegits posteriorment
 INSERT INTO tbl_professor (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof`,`telf`,`dept`) VALUES  
 ("Kevin","Garcia","Vicente","kegavi3@jpg.com","10010","5"),
