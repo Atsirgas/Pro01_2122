@@ -37,9 +37,9 @@
                 <div id="portada" class="padding-2">
                 <div class="recuadro-alu">
                     <div class="flex">
-                    <h3 style="width: 50%;"><b>Modificar Usuario</b></h3>
+                    <h3 style="width: 50%;"><b>Modificar Professor</b></h3>
                     <form action="./mostrar.php?id=prof" method="POST" enctype="multipart/form-data">
-                    <input type="submit" class="btn btn-primary" style="float: right;" value="Volver">
+                    <input type="submit" class="btn btn-primary" style="float: right;" value="Tornar">
                     </form>
                 </div>
 
@@ -48,49 +48,49 @@
             <form class="row g-3 needs-validation" novalidate action="./update-prof.php" method="post" enctype="multipart/form-data" onsubmit="return validaFormulario();">
             <div class="form-row">
             <!-- ID -->
-            <input type="text" name="id" value="<?php echo $_GET['id_prof']; ?>">
+            <input type="hidden" name="id" value="<?php echo $_GET['id_prof']; ?>">
             <!-- Nombre -->
             <div class="col-md-8 mb-3">
-            <label for="validacionNombre">Nombre</label>
-            <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserta tu nombre..." value="<?php echo $professors['nom_prof']?>" required>
+            <label for="validacionNombre">Nom</label>
+            <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserti el seu nom..." value="<?php echo $professors['nom_prof']?>" required>
             </div>
             <!-- Primer apellido -->
             <div class="col-md-8 mb-3">
-            <label for="validacionApellido01">Primer apellido</label>
-            <input type="text" name="1apellido" class="form-control" id="validacionApellido01" placeholder="Inserte su apellido..." value="<?php echo $professors['cognom1_prof']?>" required>
+            <label for="validacionApellido01">Primer Cognom</label>
+            <input type="text" name="1apellido" class="form-control" id="validacionApellido01" placeholder="Inserti el seu primer cognom..." value="<?php echo $professors['cognom1_prof']?>" required>
             </div>
             <!-- Segundo apellido -->
             <div class="col-md-8 mb-3">
-                <label for="validacionApellido02">Segundo apellido</label>
-                <input type="text" name="2apellido" class="form-control" id="validacionApellido02" placeholder="Inserte su segundo apellido..." value="<?php echo $professors['cognom2_prof']?>" required>
+                <label for="validacionApellido02">Segon Cognom</label>
+                <input type="text" name="2apellido" class="form-control" id="validacionApellido02" placeholder="Inserti el seu segon cognom..." value="<?php echo $professors['cognom2_prof']?>" required>
             </div>
             <!-- Email -->
             <div class="col-md-8 mb-3">
                 <label for="validacionEmail">Email</label>
-                <input type="email" name="email" class="form-control" id="validacionEmail" placeholder="Inserte su Email..." value="<?php echo $professors['email_prof']?>" required>
+                <input type="email" name="email" class="form-control" id="validacionEmail" placeholder="Inserti el seu Email..." value="<?php echo $professors['email_prof']?>" required>
             </div>
             <!-- Teléfono -->
             <div class="col-md-8 mb-3">
-                <label for="validacionTel">Teléfono</label>
+                <label for="validacionTel">Telèfon</label>
                 <input id="validacionTel" name="telf" class="form-control" type="text" maxlength="5" value="<?php echo $professors['telf']?>" placeholder="00000...">
             </div>
             <!-- Cursos -->
             <div class="form-group col-md-8 mb-3">
-            <label>Grado</label><br>
+            <label>Grau</label><br>
             <select name="grado" class=" btn-default btn-lg" id="select">
             <?php
             $valor = $_REQUEST['id_dept'];
             if ($valor == "Informatica") {
                 ?>
-                <option selected="selected" value="1">Informatica</option>
-                <option value="2">Administracio i finances</option>
+                <option selected="selected" value="1">Informàtica</option>
+                <option value="2">Administració i finances</option>
                 <option value="3">Esports</option>
                 <option value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
             } elseif ($valor == "Administracio i finances") {
                 ?>
-                <option value="1">Informatica</option>
+                <option value="1">Informàtica</option>
                 <option selected="selected" value="2">Administració i finances</option>
                 <option value="3">Esports</option>
                 <option value="5">Educació</option>
@@ -98,23 +98,23 @@
                 <?php
             } elseif ($valor == "Esports") {
                 ?>
-                <option value="1">Informatica</option>
-                <option value="2">Administracio i finances</option>
+                <option value="1">Informàtica</option>
+                <option value="2">Administració i finances</option>
                 <option selected="selected" value="3">Esports</option>
                 <option value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
             } elseif ($valor == "Educacio") {
                 ?>
-                <option value="1">Informatica</option>
-                <option value="2">Administracio i finances</option>
+                <option value="1">Informàtica</option>
+                <option value="2">Administració i finances</option>
                 <option value="3">Esports</option>
                 <option selected="selected" value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
             } elseif ($valor == "Sanitari") {
                 ?>
-                <option value="1">Informatica</option>
+                <option value="1">Informàtica</option>
                 <option value="2">Administracio i finances</option>
                 <option value="3">Esports</option>
                 <option value="5">Educació</option>
@@ -141,469 +141,469 @@
                 <div id="portada" class="padding-2">
                 <div class="recuadro-alu">
                     <div class="flex">
-                    <h3 style="width: 50%;"><b>Modificar Usuario</b></h3>
+                    <h3 style="width: 50%;"><b>Modificar Alumne</b></h3>
                     <form action="./mostrar.php?id=alu" method="POST" enctype="multipart/form-data">
-                    <input type="submit" class="btn btn-primary" style="float: right;" value="Volver">
+                    <input type="submit" class="btn btn-primary" style="float: right;" value="Tornar">
                     </form>
                 </div>  
 
                 <form class="row g-3 needs-validation" novalidate action="./update-alu.php" method="POST" enctype="multipart/form-data" onsubmit="return validaFormulario();">
                     <div class="form-row">
                         <!-- ID -->
-                    <input type="text" name="id" value="<?php echo $_GET['id_alu']; ?>">
+                    <input type="hidden" name="id" value="<?php echo $_GET['id_alu']; ?>">
                         <!-- Nombre -->
                         <div class="col-md-8 mb-3">
-                        <label for="validacionNombre">Nombre</label>
-                        <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserta tu nombre..." value="<?php echo $alumne['nom_alu']?>" required>
+                        <label for="validacionNombre">Nom</label>
+                        <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserti el seu nom..." value="<?php echo $alumne['nom_alu']?>" required>
                         </div>
                         <!-- Primer apellido -->
                         <div class="col-md-8 mb-3">
-                        <label for="validacionApellido01">Primer apellido</label>
-                        <input type="text" name="apellido01" class="form-control" id="validacionApellido01" placeholder="Inserte su apellido..." value="<?php echo $alumne['cognom1_alu']?>" required>
+                        <label for="validacionApellido01">Primer Cognomp</label>
+                        <input type="text" name="apellido01" class="form-control" id="validacionApellido01" placeholder="Inserieel  esuprimer cognomo..." value="<?php echo $alumne['cognom1_alu']?>" required>
                         </div>
                         <!-- Segundo apellido -->
                         <div class="col-md-8 mb-3">
-                        <label for="validacionApellido02">Segundo apellido</label>
-                        <input type="text" name="apellido02" class="form-control" id="validacionApellido02" placeholder="Inserte su segundo apellido..." value="<?php echo $alumne['cognom2_alu']?>" required>
+                        <label for="validacionApellido02">Sedn Cognomo</label>
+                        <input type="text" name="apellido02" class="form-control" id="validacionApellido02" placeholder="Inserieelu su segonocognomo..." value="<?php echo $alumne['cognom2_alu']?>" required>
                         </div>
                         <!-- DNI -->
                         <div class="col-md-8 mb-3">
                         <label for="validacionDNI"> DNI </label>
-                            <input type="text" name="dni" class="form-control" id="validacionDNI" placeholder="Inserte su DNI..." value="<?php echo $alumne['dni_alu']?>" required>
+                            <input type="text" name="dni" class="form-control" id="validacionDNI" placeholder="Inserieel seuu DNI..." value="<?php echo $alumne['dni_alu']?>" required>
                         </div>
                         <!-- Email -->
                         <div class="col-md-8 mb-3">
                                 <label for="validacionEmail">Email</label>
-                                <input type="email" name="email" class="form-control" id="validacionEmail" placeholder="Inserte su Email..." value="<?php echo $alumne['email_alu']?>">
+                                <input type="email" name="email" class="form-control" id="validacionEmail" placeholder="Inserieel seuu Email..." value="<?php echo $alumne['email_alu']?>">
                         </div>
                         <!-- Teléfono -->
                         <div class="col-md-8 mb-3">
-                                <label for="validacionTel">Teléfono</label>
+                                <label for="validacionTel">Teèéfoo</label>
                                 <input id="validacionTel" name="telefono" class="form-control" type="text" maxlength="9" placeholder="00000..." value="<?php echo $alumne['telf_alu']?>">
                         </div>
                         <!-- Cursos -->
                         <div class="form-group col-md-8 mb-3">
-                        <label>Clase</label><br>
+                        <label>Clsase</label><br>
                         <select name="clase" class="custom-select" id="select">
                        <?php
                        $value = $_REQUEST['clase'];
                        if ($value == "AF1") {
                         ?>
-                            <option selected="selected" value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option selected="selected" value="23">AF1 (ro ' Administraciniy Finaceas)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                         <?php
                        } elseif ($value == "AF2") {
                         ?>                              
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option selected="selected" value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option selected="selected" value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                         <?php
                         } elseif ($value == "AI1") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
   
-                            <option selected="selected" value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>                          <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option selected="selected" value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>                          <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "AI2") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option selected="selected" value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option selected="selected" value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "ASIX1/DAW1") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option selected="selected" value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option selected="selected" value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "ASIX2") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option selected="selected" value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option selected="selected" value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "DAW2") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option selected="selected" value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option selected="selected" value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "EAS1") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option selected="selected" value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option selected="selected" value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "EAS2") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option selected="selected" value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option selected="selected" value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "EF1") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option selected="selected" value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option selected="selected" value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "EF2") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option selected="selected" value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option selected="selected" value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "GA1") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option selected="selected" value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option selected="selected" value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "GA2") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option selected="selected" value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option selected="selected" value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "HBD1") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option selected="selected" value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option selected="selected" value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "HBD2") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option selected="selected" value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option selected="selected" value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "SMX1") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option selected="selected" value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option selected="selected" value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "SMX2") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option selected="selected" value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option selected="selected" value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "GUIA1") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option selected="selected" value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option selected="selected" value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         } elseif ($value == "GUIA2") {
                             ?>
-                            <option value="23">AF1 (1o de Administración y Finanzas)</option>
-                            <option value="24">AF2 (2o de Administración y Finanzas)</option>
-                            <option value="25">AI1 (1o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="26">AI2 (2o de Cursos Auxiliares de Enfermeria)</option>
-                            <option value="20">ASIX1/DAW1 (1o de Administración de Sistemas Informáticos y Redes / 1o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="21">ASIX2 (2o de Administración de Sistemas Informáticos y Redes)</option>
-                            <option value="22">DAW2 (2o de Desarrollo de Aplicaciones Web)</option>
-                            <option value="27">EAS1 (1o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="28">EAS2 (2o de Enseñanza y Animación Sociodeportiva)</option>
-                            <option value="29">EF1 (1o de Eduación Infantil)</option>
-                            <option value="30">EF2 (2o de Eduación Infantil)</option>
-                            <option value="31">GA1 (1o de Gestión Administrativa)</option>
-                            <option value="32">GA2 (2o de Gestión Administrativa)</option>
-                            <option value="33">HBD1 (1o de Higiene Bucodental)</option>
-                            <option value="34">HBD2 (2o de Higiene Bucodental)</option>
-                            <option value="35">SMX1 (1r de Sistemas Microinformáticos y Redes)</option>
-                            <option value="36">SMX2 (2o de Sistemas Microinformáticos y Redes)</option>
-                            <option value="37">1o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
-                            <option selected="selected" value="38">2o de Guía (Guía en el Medio Natural y Tiempo Libre)</option>
+                            <option value="23">AF1 1r d'Administració i Financess)</option>
+                            <option value="24">AF2 2n d'Administració i Financess)</option>
+                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
+                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
+                            <option value="29">EF1 1r d'Eduació Infantill)</option>
+                            <option value="30">EF2 2n d'Eduació Infantill)</option>
+                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
+                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option selected="selected" value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
                             <?php
                         }
                        ?>

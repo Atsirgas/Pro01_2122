@@ -29,31 +29,32 @@
                 <div class="col-12">
                     <h2>ENVIAR CORREU</h2>
                         <form action="./mostrar.php?id=alu" method="POST" enctype="multipart/form-data">
-                            <input type="submit" class="btn btn-primary" style="float: right;" value="Volver">
+                            <input type="submit" class="btn btn-primary" style="float: right;" value="Tornar">
                         </form>
                     <?php
                     include '../conexion.php';
-                        $id=$_GET['id_alu'];
-                        $sql="SELECT email_alu FROM tbl_alumne WHERE id_alumne={$id};";
+                    
+                        $id=$_GET['id_prof'];
+                        $sql="SELECT email_prof FROM tbl_professor WHERE id_professor={$id};";
                         $sqlfi=mysqli_query($connection, $sql);
                         foreach($sqlfi as $correo){
-                            echo "Enviaras el correu al gmail: <b>".$correo['email_alu']."</b>";
+                            echo "Enviaràs el correu al email: <b>".$correo['email_prof']."</b>";
                         }
                     ?>
                     <br>
                     <br>
-                    <form action="phpmiler.php?id_alu=<?php echo $id; ?>" method="POST" action="contacto.php">
+                    <form action="phpmiler-prof.php?id_prof=<?php echo $id; ?>" method="POST" action="contacto.php">
 
                     <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
                         <div class="form-group">
-                            <label for="nombre">Asumpte</label>
+                            <label for="nombre">Assumpte</label>
                             <input name="asunto" required type="text" id="aunto"
-                                class="form-control" placeholder="Escriu el asumpte">
+                                class="form-control" placeholder="Escriu l'assumpte...">
                         </div>
                         
                         <div class="form-group">
                             <label for="mensaje">Missatge</label>
-                            <textarea required placeholder="Escribe el missatge"
+                            <textarea required placeholder="Escriu el missatge..."
                                 class="form-control" name="mensaje" id="mensaje"
                                 cols="30" rows="5"></textarea>
                         </div>

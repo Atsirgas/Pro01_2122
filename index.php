@@ -30,18 +30,19 @@
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="correo" class="form-control input_user" value="" placeholder="correo">
+							<input type="text" name="correo" class="form-control input_user" placeholder="exemple@jpg.com"require>
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="psw" class="form-control input_pass" value="" placeholder="password">
+							<input type="password" name="psw" class="form-control input_pass" placeholder="password"require>
 						</div>
-						<div class="form-group">
+						<br>
+						<div class="form-group">								
 							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" id="customControlInline">
-								<label class="custom-control-label" for="customControlInline">Remember me</label>
+							<input class="radioButton" type="radio" name="tipo" id="Adminitrador" value="Administrador" /> Admin/Secretari/a
+        					<input class="radioButton" type="radio" name="tipo" id="Profesor" value="Profesor" /> Professor<br><br>
 							</div>
 						</div>
 							<div class="d-flex justify-content-center mt-3 login_container">

@@ -60,8 +60,29 @@ if (isset($_GET['id'])=="prof"){
             header("Content-Type: application/octet-stream"); 
             header("Content-Disposition: attachment; filename=\"". $file_name2 . "\""); 
             readfile ($name2, $ALUMNOS);
+            $file = 'alumnos.csv';
+                $remote_file = 'C:\inetpub\ftp';
+                $ftp_server = "192.168.200.254";
+                $ftp_user_name = "admin@jpg.com";
+                $ftp_user_pass = "Qwerty12345";
+
+                // set up basic connection
+                $conn_id = ftp_connect($ftp_server);
+
+                // login with username and password
+                $login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass);
+
+                // upload a file
+                if (ftp_put($conn_id, $remote_file, $file, FTP_ASCII)) {
+                echo "successfully uploaded $file\n";
+                } else {
+                echo "There was a problem while uploading $file\n";
+                }
+
+                // close the connection
+                ftp_close($conn_id);
         } else {
-            echo "<script>window.alert('No se ha podido crear el archivo')</script>";
+            echo "<script>window.alert('No se'ha pogut crear l'archiu')</script>";
             echo "<script>window.location.href='./mostrar.php?id=alu'</script>"; 
         }
         }

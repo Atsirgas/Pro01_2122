@@ -155,12 +155,13 @@ html {
 }
 
 .recuadro-alu {
-    width: 100%;
+    margin-left: 25%;
+    width: 40%;
     height: 100%;
     background-color: #116079;
     position: center;
     border-radius: 30px;
-    padding: 3vw;
+    padding: 2vw;
 }
 
 
@@ -665,6 +666,10 @@ input[type="file"]:hover {
     padding-left: 0;
 }
 
+#select {
+    width: 28vw;
+}
+
 @media screen and (max-width: 300px) {
     .cancelbtn,
     .deletebtn {
@@ -729,3 +734,22 @@ input[type="file"]:hover {
         padding-left: 0vw;
     }
 }
+
+
+/* @media only screen and (min-width: 600px) {
+    html {
+        zoom: .8;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        zoom: .9;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    html {
+        zoom: 1;
+    }
+} */
