@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION["email_usu"])){
+    header("Location:../index.php");
+}
+?>
 <!doctype html>
 <html lang="es">
     
@@ -43,7 +49,7 @@
                     ?>
                     <br>
                     <br>
-                    <form action="phpmiler-alu.php?id_alu=<?php echo $id; ?>" method="POST" action="contacto.php">
+                    <form action="phpmiler-alu.php?id_alu=<?php echo $id; ?>" method="POST" >
 
                     <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
                         <div class="form-group">

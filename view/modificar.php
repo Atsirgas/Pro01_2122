@@ -1,8 +1,15 @@
+<?php
+session_start();
+if(!isset($_SESSION["email_usu"])){
+    header("Location:../index.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/x-icon" href="../img/JPG.png">
     <title>Modificar Usuario</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
         <!-- CSS only -->
