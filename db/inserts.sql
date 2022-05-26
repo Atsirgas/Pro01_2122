@@ -208,8 +208,15 @@ ON dept= c.id_dept;
 
 -- admins
 
-INSERT INT tbl_admin (`nom_admin`,`email_admin`,`password_admin`,`telf`,`dept`) VALUES ("admin","admin@jpg.com","7110eda4d09e062aa5e4a390b0a572ac0d2c0220","55555","4");
+INSERT INTO tbl_admin (`nom_admin`,`email_admin`,`password_admin`,`telf`,`dept`) VALUES ("admin","admin@jpg.com","7110eda4d09e062aa5e4a390b0a572ac0d2c0220","55555","4");
+
+-- secretaria 
+
+INSERT INTO tbl_admin (`nom_admin`,`email_admin`,`password_admin`,`telf`,`dept`) VALUES  ("Secretaria","secretaria@jpg.com","7110eda4d09e062aa5e4a390b0a572ac0d2c0220","11111","4")
 
 -- aconsultar per fer insert admins (ad)
 
 select email_admin as Name, nom_admin as FirstName, password_admin as password, c.nom_dept as 'dept'  from tbl_admin INNER JOIN tbl_dept c  ON dept= c.id_dept ;
+
+
+-- $connection = mysqli_connect('172.24.16.141', 'Admin', 'Qwerty12345_', 'curs');

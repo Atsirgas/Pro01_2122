@@ -56,7 +56,7 @@ if (isset($_GET['id'])=="prof"){
 
         $querytotal2 = mysqli_query($connection,$query2);
             $arraytabla2 = array();
-            array_push($arraytabla2, "FirstName,GivenName,SurName,Grupo");
+            array_push($arraytabla2, "Name,FirstName,LastName,Grupo");
             foreach ($querytotal2 as $header => $alumno) {
                 $ALUMNOS = array_push($arraytabla2, "{$alumno['email_alu']},{$alumno['nom_alu']},{$alumno['cognom1_alu']},{$alumno['nom_classe']}");
             }
