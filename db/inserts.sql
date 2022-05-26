@@ -4,6 +4,15 @@ INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10003","Esports");
 INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10004","Gestio escola");
 INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10005","Educacio");
 INSERT INTO tbl_dept(`codi_dept`,`nom_dept`) VALUES ("10006","Sanitari");
+--update
+
+UPDATE tbl_dept set nom_dept = "G-PROF-INF" WHERE codi_dept = "10001";
+UPDATE tbl_dept set nom_dept = "G-PROF-AIF" WHERE codi_dept = "10002";
+UPDATE tbl_dept set nom_dept = "G-PROF-EAS" WHERE codi_dept = "10003";
+UPDATE tbl_dept set nom_dept = "G-ADMIN" WHERE codi_dept = "10004";
+UPDATE tbl_dept set nom_dept = "G-PROF-EDU" WHERE codi_dept = "10005";
+UPDATE tbl_dept set nom_dept = "G-PROF-SAN" WHERE codi_dept = "10006";
+
 
 INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20001","ASIX1/DAW1","71");
 INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20002","ASIX2","72");
@@ -26,11 +35,34 @@ INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20018","GUIA
 INSERT INTO tbl_classe(`codi_classe`,`nom_classe`,`tutor`) VALUES ("20019","GUIA2","69");
 
 
+-- update
+UPDATE tbl_classe set nom_classe = "G-ALU-ASIX1-DAW1" WHERE codi_classe = "20001";
+UPDATE tbl_classe set nom_classe = "G-ALU-ASIX2" WHERE codi_classe = "20002";
+UPDATE tbl_classe set nom_classe = "G-ALU-DAW2" WHERE codi_classe = "20003";
+UPDATE tbl_classe set nom_classe = "G-ALU-AF1" WHERE codi_classe = "20004";
+UPDATE tbl_classe set nom_classe = "G-ALU-AF2" WHERE codi_classe = "20005";
+UPDATE tbl_classe set nom_classe = "G-ALU-AI1" WHERE codi_classe = "20006";
+UPDATE tbl_classe set nom_classe = "G-ALU-AI1" WHERE codi_classe = "20007";
+UPDATE tbl_classe set nom_classe = "G-ALU-EAS1" WHERE codi_classe = "20008";
+UPDATE tbl_classe set nom_classe = "G-ALU-EAS2" WHERE codi_classe = "20009";
+UPDATE tbl_classe set nom_classe = "G-ALU-EF1" WHERE codi_classe = "20010";
+UPDATE tbl_classe set nom_classe = "G-ALU-EF2" WHERE codi_classe = "20011";
+UPDATE tbl_classe set nom_classe = "G-ALU-GA1" WHERE codi_classe = "20012";
+UPDATE tbl_classe set nom_classe = "G-ALU-GA2" WHERE codi_classe = "20013";
+UPDATE tbl_classe set nom_classe = "G-ALU-HBD1" WHERE codi_classe = "20014";
+UPDATE tbl_classe set nom_classe = "G-ALU-HBD2" WHERE codi_classe = "20015";
+UPDATE tbl_classe set nom_classe = "G-ALU-SMX1" WHERE codi_classe = "20016";
+UPDATE tbl_classe set nom_classe = "G-ALU-SMX2" WHERE codi_classe = "20017";
+UPDATE tbl_classe set nom_classe = "G-ALU-GUIA1" WHERE codi_classe = "20018";
+UPDATE tbl_classe set nom_classe = "G-ALU-GUIA2" WHERE codi_classe = "20019";
+
+
+
 
 -- inserts alumnes
 
 INSERT INTO tbl_alumne (`dni_alu`,`nom_alu`,`cognom1_alu`,`cognom2_alu`,`telf_alu`,`email_alu`,`classe`) Values 
-("80883822K","Alex","Sanchez","Gonzalo","936380478","falso","20"),
+("80883822K","Alex","Sanchez","Gonzalo","936380478","alsago3","20"),
 ("92920767P","Sergio","Garcia","Felix","741196633","segafe2@jpg.com","32"),
 ("00693547M","Joan","Garcia","Perez","868665308","jogape1@jpg.com","24"),
 ("99424656A","Pol","Martinez","Lopez","623035414","pomalo5@jpg.com","24"),
