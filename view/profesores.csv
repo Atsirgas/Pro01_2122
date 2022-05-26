@@ -1,38 +1,34 @@
 Name,FirstName,LastName,Grupo
-gegolo8@jpg.com,Gerard,Gonzalo,Informatica
-jogaro5@jpg.com,Joel,Garcia,Informatica
-alberto.larrea@jpg.com,Alberto,Larrea,Informatica
-guillem.talayero@gmail.com,Guillem,Talayero,Informatica
-seroro3@jpg.com,Sergio,Rodriguez,Administracio i finances
-paviro3@jpg.com,Paco,Vicente,Administracio i finances
-pavefe1@jpg.com,Paco,Velasco,Administracio i finances
-algalo4@jpg.com,Alex,Garcia,Administracio i finances
-jogaro5@jpg.comm,Joel,Felix,Administracio i finances
-davega9@jpg.com,Daniel,Velasco,Administracio i finances
-jopema8@jpg.com,Joan,Perez,Administracio i finances
-kefepe8@jpg.com,Kevin,Felix,Administracio i finances
-jofero4@jpg.com,Joan,Felix,Administracio i finances
-alfelo3@jpg.com,Alex,Felix,Administracio i finances
-jovive7@jpg.com,Joan,Vicente,Administracio i finances
-sevepe5@jpg.com,Sergio,Velasco,Administracio i finances
-jogasa6@jpg.com,Joan,Garcia,Administracio i finances
-popema9@jpg.com,Pol,Perez,Administracio i finances
-pagolo9@jpg.com,Paco,Gonzalo,Administracio i finances
-rasaro2@jpg.com,Raul,Sanchez,Administracio i finances
-jopevi3@jpg.com,Joel,Perez,Administracio i finances
-seroro345678@jpg.com,Sergio,Rodriguez,Administracio i finances
-prueba@prueba.com,prueba,prueba,Administracio i finances
-hola@gmail.es,España,España,Administracio i finances
-pagovi8@jpg.com,Paco,Gonzalo,Esports
-jovero9@jpg.com,Joan,Velasco,Esports
-algoro6@jpg.com,Alex,Gonzalo,Esports
-ralofe8@jpg.com,Raul,Lopez,Esports
-parovi5@jpg.com,Paco,Rodriguez,Esports
-sepevi7@jpg.com,Sergio,Perez,Esports
-kegavi3@jpg.com,Kevin,Garcia,Educacio
-ragogo9@jpg.com,Raul,Gonzalo,Educacio
-kelovi3@jpg.com,Kevin,Lopez,Educacio
-jomama7@jpg.com,Joan,Martinez,Educacio
-rarovi5@jpg.com,Raul,Rodriguez,Sanitari
-kefepe5@jpg.com,Kevin,Felix,Sanitari
-dapevi3@jpg.com,Daniel,Perez,Sanitari
+pagovi8@jpg.com,Paco,Gonzalo,G-PROF-EAS
+seroro3@jpg.com,Sergio,Rodriguez,G-PROF-AIF
+paviro3@jpg.com,Paco,Vicente,G-PROF-AIF
+jofeve9@jpg.com,Joan,Felix,G-PROF-INF
+pavefe1@jpg.com,Paco,Velasco,G-PROF-AIF
+algalo4@jpg.com,Alex,Garcia,G-PROF-AIF
+jovero9@jpg.com,Joan,Velasco,G-PROF-EAS
+algoro6@jpg.com,Alex,Gonzalo,G-PROF-EAS
+jofega5@jpg.com,Joel,Felix,G-PROF-AIF
+davega9@jpg.com,Daniel,Velasco,G-PROF-AIF
+ralofe8@jpg.com,Raul,Lopez,G-PROF-EAS
+jopema8@jpg.com,Joan,Perez,G-PROF-AIF
+kefepe8@jpg.com,Kevin,Felix,G-PROF-INF
+jofero4@jpg.com,Joan,Felix,G-PROF-AIF
+alfelo3@jpg.com,Alex,Felix,G-PROF-AIF
+parovi5@jpg.com,Paco,Rodriguez,G-PROF-EAS
+jovive7@jpg.com,Joan,Vicente,G-PROF-AIF
+sepevi7@jpg.com,Sergio,Perez,G-PROF-EAS
+sevepe5@jpg.com,Sergio,Velasco,G-PROF-AIF
+jogasa6@jpg.com,Joan,Garcia,G-PROF-AIF
+popema9@jpg.com,Pol,Perez,G-PROF-AIF
+gegolo8@jpg.com,Gerard,Gonzalo,G-PROF-INF
+pagolo9@jpg.com,Paco,Gonzalo,G-PROF-AIF
+rasaro2@jpg.com,Raul,Sanchez,G-PROF-AIF
+jogaro5@jpg.com,Joel,Garcia,G-PROF-INF
+jopevi3@jpg.com,Joel,Perez,G-PROF-AIF
+kegavi3@jpg.com,Kevin,Garcia,G-PROF-EDU
+rarovi5@jpg.com,Raul,Rodriguez,G-PROF-SAN
+ragogo9@jpg.com,Raul,Gonzalo,G-PROF-EDU
+kefepe5@jpg.com,Kevin,Felix,G-PROF-SAN
+kelovi3@jpg.com,Kevin,Lopez,G-PROF-EDU
+jomama7@jpg.com,Joan,Martinez,G-PROF-EDU
+dapevi3@jpg.com,Daniel,Perez,G-PROF-SAN
