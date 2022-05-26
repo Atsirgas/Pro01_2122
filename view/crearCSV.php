@@ -1,4 +1,10 @@
 <?php
+session_start();
+if(!isset($_SESSION["email_usu"])){
+    header("Location:../index.php");
+}
+
+
 function SaveFile($name, $array) {
     file_put_contents($name, $array[0]."\n");
     for ($i=1; $i < count($array); $i++) {

@@ -8,8 +8,8 @@ if(!isset($_REQUEST['id']) OR (($_REQUEST['id'])!="alu" AND ($_REQUEST['id'])!="
 }
 
 include '../conexion.php';
-$departamento="SELECT dept FROM tbl_admin WHERE email_admin={$_SESSION['email_usu']};";
-$dept=mysqli_query($connection, $departamento);
+/* $departamento="SELECT dept FROM tbl_admin WHERE email_admin={$_SESSION['email_usu']};";
+$dept=mysqli_query($connection, $departamento); */
 /* print_r($dept); */
 ?>
 <!DOCTYPE html>
@@ -173,7 +173,7 @@ $dept=mysqli_query($connection, $departamento);
 
                                         <div id="id01" class="modal2">
                                         <span onclick="document.getElementById('id01').style.display='none'" class="close2" title="Close Modal">×</span>
-                                        <form class="modal-content2 flex" action="/insertCSV?id=alu.php">
+                                        <form class="modal-content2 flex" action="/insertCSV-alu?id=alu.php">
                                             <div class="container">
                                             <div class="drag-drop">
                                                     <input type="file" multiple="multiple" id="photo" />
@@ -451,7 +451,7 @@ $dept=mysqli_query($connection, $departamento);
 
                                         <div id="id01" class="modal2">
                                         <span onclick="document.getElementById('id01').style.display='none'" class="close2" title="Close Modal"></span>
-                                        <form class="modal-content2 flex" action="./insertCSV.php?id=prof" method="post" enctype="multipart/form-data">
+                                        <form class="modal-content2 flex" action="./insertCSV-prof.php?id=prof" method="post" enctype="multipart/form-data">
                                             <div class="container">
                                             <div class="drag-drop">
                                                     <input type="file"  name="fichero" />
