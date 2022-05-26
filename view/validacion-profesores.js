@@ -41,7 +41,7 @@ var validaFormulario = function() {
     // Curso
     validaCurso = document.getElementById('select').value;
     if (validaCurso == "") {
-        alert('[ERROR] Debe escoger un curso');
+        alert('[ERROR] Debe escoger un grado');
         validacion = false;
     }
 

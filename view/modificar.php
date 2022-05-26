@@ -59,35 +59,35 @@ if(!isset($_SESSION["email_usu"])){
             <!-- Nombre -->
             <div class="col-md-8 mb-3">
             <label for="validacionNombre">Nom</label>
-            <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserti el seu nom..." value="<?php echo $professors['nom_prof']?>" required>
+            <input type="text" name="nombre" class="form-control bg-transparent" style="color: white;" id="validacionNombre" placeholder="Inserti el seu nom..." value="<?php echo $professors['nom_prof']?>" required>
             </div>
             <!-- Primer apellido -->
             <div class="col-md-8 mb-3">
             <label for="validacionApellido01">Primer Cognom</label>
-            <input type="text" name="1apellido" class="form-control" id="validacionApellido01" placeholder="Inserti el seu primer cognom..." value="<?php echo $professors['cognom1_prof']?>" required>
+            <input type="text" name="1apellido" class="form-control bg-transparent" style="color: white;" id="validacionApellido01" placeholder="Inserti el seu primer cognom..." value="<?php echo $professors['cognom1_prof']?>" required>
             </div>
             <!-- Segundo apellido -->
             <div class="col-md-8 mb-3">
                 <label for="validacionApellido02">Segon Cognom</label>
-                <input type="text" name="2apellido" class="form-control" id="validacionApellido02" placeholder="Inserti el seu segon cognom..." value="<?php echo $professors['cognom2_prof']?>" required>
+                <input type="text" name="2apellido" class="form-control bg-transparent" style="color: white;" id="validacionApellido02" placeholder="Inserti el seu segon cognom..." value="<?php echo $professors['cognom2_prof']?>" required>
             </div>
             <!-- Email -->
             <div class="col-md-8 mb-3">
                 <label for="validacionEmail">Email</label>
-                <input type="email" name="email" class="form-control" id="validacionEmail" placeholder="Inserti el seu Email..." value="<?php echo $professors['email_prof']?>" required>
+                <input type="email" name="email" class="form-control bg-transparent" style="color: white;" id="validacionEmail" placeholder="Inserti el seu Email..." value="<?php echo $professors['email_prof']?>" required>
             </div>
             <!-- Teléfono -->
             <div class="col-md-8 mb-3">
                 <label for="validacionTel">Telèfon</label>
-                <input id="validacionTel" name="telf" class="form-control" type="text" maxlength="5" value="<?php echo $professors['telf']?>" placeholder="00000...">
+                <input id="validacionTel" name="telf" class="form-control bg-transparent" style="color: white;" type="text" maxlength="5" value="<?php echo $professors['telf']?>" placeholder="00000...">
             </div>
             <!-- Cursos -->
             <div class="form-group col-md-8 mb-3">
             <label>Grau</label><br>
-            <select name="grado" class=" btn-default btn-lg" id="select">
+            <select name="grado" class=" btn-default btn-lg bg-transparent" id="select">
             <?php
             $valor = $_REQUEST['id_dept'];
-            if ($valor == "Informatica") {
+            if ($valor == "G-PROF-INF") {
                 ?>
                 <option selected="selected" value="1">Informàtica</option>
                 <option value="2">Administració i finances</option>
@@ -95,7 +95,7 @@ if(!isset($_SESSION["email_usu"])){
                 <option value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
-            } elseif ($valor == "Administracio i finances") {
+            } elseif ($valor == "G-PROF-AIF") {
                 ?>
                 <option value="1">Informàtica</option>
                 <option selected="selected" value="2">Administració i finances</option>
@@ -103,7 +103,7 @@ if(!isset($_SESSION["email_usu"])){
                 <option value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
-            } elseif ($valor == "Esports") {
+            } elseif ($valor == "G-PROF-EAS") {
                 ?>
                 <option value="1">Informàtica</option>
                 <option value="2">Administració i finances</option>
@@ -111,7 +111,7 @@ if(!isset($_SESSION["email_usu"])){
                 <option value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
-            } elseif ($valor == "Educacio") {
+            } elseif ($valor == "G-PROF-EDU") {
                 ?>
                 <option value="1">Informàtica</option>
                 <option value="2">Administració i finances</option>
@@ -119,7 +119,7 @@ if(!isset($_SESSION["email_usu"])){
                 <option selected="selected" value="5">Educació</option>
                 <option value="6">Sanitari</option>
                 <?php
-            } elseif ($valor == "Sanitari") {
+            } elseif ($valor == "G-PROF-SAN") {
                 ?>
                 <option value="1">Informàtica</option>
                 <option value="2">Administracio i finances</option>
@@ -161,456 +161,456 @@ if(!isset($_SESSION["email_usu"])){
                         <!-- Nombre -->
                         <div class="col-md-8 mb-3">
                         <label for="validacionNombre">Nom</label>
-                        <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserti el seu nom..." value="<?php echo $alumne['nom_alu']?>" required>
+                        <input type="text" name="nombre" class="form-control bg-transparent" style="color: white;" id="validacionNombre" placeholder="Inserti el seu nom..." value="<?php echo $alumne['nom_alu']?>" required>
                         </div>
                         <!-- Primer apellido -->
                         <div class="col-md-8 mb-3">
-                        <label for="validacionApellido01">Primer Cognomp</label>
-                        <input type="text" name="apellido01" class="form-control" id="validacionApellido01" placeholder="Inserieel  esuprimer cognomo..." value="<?php echo $alumne['cognom1_alu']?>" required>
+                        <label for="validacionApellido01">Primer Cognom</label>
+                        <input type="text" name="apellido01" class="form-control bg-transparent" style="color: white;" id="validacionApellido01" placeholder="Inserti el seu primer cognom..." value="<?php echo $alumne['cognom1_alu']?>" required>
                         </div>
                         <!-- Segundo apellido -->
                         <div class="col-md-8 mb-3">
-                        <label for="validacionApellido02">Sedn Cognomo</label>
-                        <input type="text" name="apellido02" class="form-control" id="validacionApellido02" placeholder="Inserieelu su segonocognomo..." value="<?php echo $alumne['cognom2_alu']?>" required>
+                        <label for="validacionApellido02">Segon Cognom</label>
+                        <input type="text" name="apellido02" class="form-control bg-transparent" style="color: white;" id="validacionApellido02" placeholder="Inserti el seu segon cognom..." value="<?php echo $alumne['cognom2_alu']?>" required>
                         </div>
                         <!-- DNI -->
                         <div class="col-md-8 mb-3">
                         <label for="validacionDNI"> DNI </label>
-                            <input type="text" name="dni" class="form-control" id="validacionDNI" placeholder="Inserieel seuu DNI..." value="<?php echo $alumne['dni_alu']?>" required>
+                            <input type="text" name="dni" class="form-control bg-transparent" style="color: white;" id="validacionDNI" placeholder="Inserti el seu DNI..." value="<?php echo $alumne['dni_alu']?>" required>
                         </div>
                         <!-- Email -->
                         <div class="col-md-8 mb-3">
                                 <label for="validacionEmail">Email</label>
-                                <input type="email" name="email" class="form-control" id="validacionEmail" placeholder="Inserieel seuu Email..." value="<?php echo $alumne['email_alu']?>">
+                                <input type="email" name="email" class="form-control bg-transparent" style="color: white;" id="validacionEmail" placeholder="Inserti el seu Email..." value="<?php echo $alumne['email_alu']?>">
                         </div>
                         <!-- Teléfono -->
                         <div class="col-md-8 mb-3">
-                                <label for="validacionTel">Teèéfoo</label>
-                                <input id="validacionTel" name="telefono" class="form-control" type="text" maxlength="9" placeholder="00000..." value="<?php echo $alumne['telf_alu']?>">
+                                <label for="validacionTel">Telèfon</label>
+                                <input id="validacionTel" name="telefono" class="form-control bg-transparent" style="color: white;" type="text" maxlength="9" placeholder="00000..." value="<?php echo $alumne['telf_alu']?>">
                         </div>
                         <!-- Cursos -->
                         <div class="form-group col-md-8 mb-3">
-                        <label>Clsase</label><br>
-                        <select name="clase" class="custom-select" id="select">
+                        <label>Clase</label><br>
+                        <select name="clase" class="custom-select bg-transparent" id="select">
                        <?php
                        $value = $_REQUEST['clase'];
-                       if ($value == "AF1") {
+                       if ($value == "G-ALU-AF1") {
                         ?>
-                            <option selected="selected" value="23">AF1 (ro ' Administraciniy Finaceas)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option selected="selected" value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                         <?php
-                       } elseif ($value == "AF2") {
+                       } elseif ($value == "G-ALU-AF2") {
                         ?>                              
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option selected="selected" value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option selected="selected" value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxess)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                         <?php
-                        } elseif ($value == "AI1") {
+                        } elseif ($value == "G-ALU-AI1") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-  
-                            <option selected="selected" value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>                          <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option selected="selected" value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "AI2") {
+                        } elseif ($value == "G-ALU-AI2") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option selected="selected" value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option selected="selected" value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "ASIX1/DAW1") {
+                        } elseif ($value == "G-ALU-ASIX1-DAW1") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option selected="selected" value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Financess)</option>
+                            <option value="24">AF2 (2n d'Administració i Financess)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option selected="selected" value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "ASIX2") {
+                        } elseif ($value == "G-ALU-ASIX2") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option selected="selected" value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option selected="selected" value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "DAW2") {
+                        } elseif ($value == "G-ALU-DAW2") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option selected="selected" value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option selected="selected" value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "EAS1") {
+                        } elseif ($value == "G-ALU-EAS1") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option selected="selected" value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option selected="selected" value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "EAS2") {
+                        } elseif ($value == "G-ALU-EAS2") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option selected="selected" value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option selected="selected" value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "EF1") {
+                        } elseif ($value == "G-ALU-EF1") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option selected="selected" value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option selected="selected" value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "EF2") {
+                        } elseif ($value == "G-ALU-EF2") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option selected="selected" value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 1r d'Eduació Infantil)</option>
+                            <option selected="selected" value="30">EF2 2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "GA1") {
+                        } elseif ($value == "G-ALU-GA1") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option selected="selected" value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option selected="selected" value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "GA2") {
+                        } elseif ($value == "G-ALU-GA2") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option selected="selected" value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option selected="selected" value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "HBD1") {
+                        } elseif ($value == "G-ALU-HBD1") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option selected="selected" value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option selected="selected" value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "HBD2") {
+                        } elseif ($value == "G-ALU-HBD2") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option selected="selected" value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option selected="selected" value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "SMX1") {
+                        } elseif ($value == "G-ALU-SMX1") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option selected="selected" value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option selected="selected" value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "SMX2") {
+                        } elseif ($value == "G-ALU-SMX2") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option selected="selected" value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option selected="selected" value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "GUIA1") {
+                        } elseif ($value == "G-ALU-GUIA1") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option selected="selected" value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option selected="selected" value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
-                        } elseif ($value == "GUIA2") {
+                        } elseif ($value == "G-ALU-GUIA2") {
                             ?>
-                            <option value="23">AF1 1r d'Administració i Financess)</option>
-                            <option value="24">AF2 2n d'Administració i Financess)</option>
-                            <option value="25">AI1 1r de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="26">AI2 2n de Cursos Auxiliars d'Infermeriaa)</option>
-                            <option value="20">ASIX1/DAW1 1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="21">ASIX2 2n d'Administració de Sistemes Informàtics y Xarxess)</option>
-                            <option value="22">DAW2 2n de Desenvolupament d'Aplicacions Webb)</option>
-                            <option value="27">EAS1 1r d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="28">EAS2 2n d'Ensenyament i Animació Sociodeportivaa)</option>
-                            <option value="29">EF1 1r d'Eduació Infantill)</option>
-                            <option value="30">EF2 2n d'Eduació Infantill)</option>
-                            <option value="31">GA1 1r de Gestió Administrativaa)</option>
-                            <option value="32">GA2 2n de Gestió Administrativaa)</option>
-                            <option value="33">HBD1 1r de Higiene Bucodentall)</option>
-                            <option value="34">HBD2 2n de Higiene Bucodentall)</option>
-                            <option value="35">SMX1 1r de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="36">SMX2 2n de Sistemes Microinformàtics i Xarxess)</option>
-                            <option value="37"1r de Guía (Guía en el Medi Natural i Temps Lliure))</option>
-                            <option selected="selected" value="38"2n de Guía (Guía en el Medi Natural i Temps Lliure))</option>
+                            <option value="23">AF1 (1r d'Administració i Finances)</option>
+                            <option value="24">AF2 (2n d'Administració i Finances)</option>
+                            <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
+                            <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
+                            <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
+                            <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>
+                            <option value="29">EF1 (1r d'Eduació Infantil)</option>
+                            <option value="30">EF2 (2n d'Eduació Infantil)</option>
+                            <option value="31">GA1 (1r de Gestió Administrativa)</option>
+                            <option value="32">GA2 (2n de Gestió Administrativa)</option>
+                            <option value="33">HBD1 (1r de Higiene Bucodental)</option>
+                            <option value="34">HBD2 (2n de Higiene Bucodental)</option>
+                            <option value="35">SMX1 (1r de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="36">SMX2 (2n de Sistemes Microinformàtics i Xarxes)</option>
+                            <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
+                            <option selected="selected" value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
                             <?php
                         }
                        ?>

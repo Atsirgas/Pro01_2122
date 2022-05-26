@@ -24,7 +24,9 @@ if(!isset($_SESSION["email_usu"])){
     <body>
         <div id="portada" class="padding-3">
 
-        <div class="recuadro-alu">
+        <div class="recuadro-alu" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
         
         <!-- Termina la definición del menú -->
@@ -55,13 +57,13 @@ if(!isset($_SESSION["email_usu"])){
                         <div class="form-group">
                             <label for="nombre">Assumpte</label>
                             <input name="asunto" required type="text" id="aunto"
-                                class="form-control" placeholder="Escriu l'assumpte...">
+                                class="form-control bg-transparent" style="color: white;" placeholder="Escriu l'assumpte...">
                         </div>
                         
                         <div class="form-group">
                             <label for="mensaje">Missatge</label>
                             <textarea required placeholder="Escriu el missatge..."
-                                class="form-control" name="mensaje" id="mensaje"
+                                class="form-control bg-transparent" style="color: white;" name="mensaje" id="mensaje"
                                 cols="30" rows="5"></textarea>
                         </div>
                         <div class="form-group">

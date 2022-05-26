@@ -670,6 +670,10 @@ input[type="file"]:hover {
     width: 28vw;
 }
 
+#loged {
+    padding-left: 2vw;
+}
+
 @media screen and (max-width: 300px) {
     .cancelbtn,
     .deletebtn {
@@ -683,6 +687,9 @@ input[type="file"]:hover {
     }
     table {
         overflow-x: auto;
+    }
+    #loged {
+        display: none;
     }
 }
 
@@ -732,6 +739,9 @@ input[type="file"]:hover {
     }
     .posicion-search {
         padding-left: 0vw;
+    }
+    #loged {
+        display: block;
     }
 }
 

@@ -41,33 +41,33 @@ if(!isset($_SESSION["email_usu"])){
     <!-- Nombre -->
     <div class="col-md-10 mb-3">
       <label for="validacionNombre">Nom</label>
-      <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserti el seu nom..." required>
+      <input type="text" name="nombre" class="form-control bg-transparent" style="color: white;" id="validacionNombre" placeholder="Inserti el seu nom..." required>
     </div>
     <!-- Primer apellido -->
     <div class="col-md-10 mb-3">
       <label for="validacionApellido01">Primer cognom</label>
-      <input type="text" name="apellido01" class="form-control" id="validacionApellido01" placeholder="Inserti el seu cognom..." required>
+      <input type="text" name="apellido01" class="form-control bg-transparent" style="color: white;" id="validacionApellido01" placeholder="Inserti el seu cognom..." required>
     </div>
     <!-- Segundo apellido -->
     <div class="col-md-10 mb-3">
       <label for="validacionApellido02">Segon cognom</label>
-      <input type="text" name="apellido02" class="form-control" id="validacionApellido02" placeholder="Inserti el seu segon cognom..." required>
+      <input type="text" name="apellido02" class="form-control bg-transparent" style="color: white;" id="validacionApellido02" placeholder="Inserti el seu segon cognom..." required>
     </div>
     <!-- DNI -->
     <div class="col-md-10 mb-3">
     <label for="validacionDNI"> DNI </label>
-        <input type="text" name="dni" class="form-control" id="validacionDNI" placeholder="Inserti el seu DNI..." required>
+        <input type="text" name="dni" class="form-control bg-transparent" style="color: white;" id="validacionDNI" placeholder="Inserti el seu DNI..." required>
     </div>
     <!-- Email -->
     <div class="col-md-10 mb-2">
             <label for="validacionEmail">Email</label>
-            <input type="email" name="email" class="form-control" id="validacionEmail" placeholder="Inserti el seu Email...">
+            <input type="email" name="email" class="form-control bg-transparent" style="color: white;" id="validacionEmail" placeholder="Inserti el seu Email...">
             <small style="color: white;">El seu Email no es pot repetir amb cap altre registrat amb antelació.</small>
     </div>
     <!-- Teléfono -->
     <div class="col-md-10 mb-3">
             <label for="validacionTel">Telèfon</label>
-            <input id="validacionTel" name="telefono" class="form-control" type="text" maxlength="9" placeholder="000000000...">
+            <input id="validacionTel" name="telefono" class="form-control bg-transparent" style="color: white;" type="text" maxlength="9" placeholder="000000000...">
     </div>
     <!-- Cursos -->
     <div class="form-group col-md-8 mb-3">
@@ -78,8 +78,8 @@ if(!isset($_SESSION["email_usu"])){
         <option value="24">AF2 (2n d'Administració i Finances)</option>
         <option value="25">AI1 (1r de Cursos Auxiliars d'Infermeria)</option>
         <option value="26">AI2 (2n de Cursos Auxiliars d'Infermeria)</option>
-        <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics y Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
-        <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics y Xarxes)</option>
+        <option value="20">ASIX1/DAW1 (1r d'Administració de Sistemes Informàtics i Xarxes / 1r de Desenvolupament d'Aplicacions Web)</option>
+        <option value="21">ASIX2 (2n d'Administració de Sistemes Informàtics i Xarxes)</option>
         <option value="22">DAW2 (2n de Desenvolupament d'Aplicacions Web)</option>
         <option value="27">EAS1 (1r d'Ensenyament i Animació Sociodeportiva)</option>
         <option value="28">EAS2 (2n d'Ensenyament i Animació Sociodeportiva)</option>

@@ -31,7 +31,9 @@ $dept=mysqli_query($connection, $departamento); */
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <div id="portada" class="padding-3">
-        <div class="recuadro">
+        <div class="recuadro" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
             <?php
                 /* echo $_SESSION["email_usu"]; */
                 
@@ -284,6 +286,9 @@ $dept=mysqli_query($connection, $departamento); */
                                    
                                 </div>
                                 </li>
+                                <li id="loged" class="nav-item padding-right3">
+                                    <p>Loged by: <?php echo $_SESSION["email_usu"];?></p>
+                                </li>
                                 </ul>
                             </div>
                         </div>
@@ -313,7 +318,7 @@ $dept=mysqli_query($connection, $departamento); */
                     echo '<th>Telèfon</th>';
                     echo '<th>Email</th>';
                     echo '<th>DNI</th>';
-                    echo '<th>Classe</th>';
+                    echo '<th style="width:100%;">Classe</th>';
                     if($_SESSION['tipo']=="Administrador"){
                     echo '<th>Borrar</th>';
                     echo '<th>Modificar</th>';
@@ -552,6 +557,9 @@ $dept=mysqli_query($connection, $departamento); */
                                     <a onClick="aviso3();" class=' btn btn-danger btn-lg form-control ms-1' role='button' aria-pressed='true'>Logout</a>
                                    
                                 </div>
+                                </li>
+                                <li id="loged" class="nav-item padding-right3">
+                                    <p>Loged by: <?php echo $_SESSION["email_usu"];?></p>
                                 </li>
                                 </ul>
                                 

@@ -29,7 +29,9 @@ if(!isset($_SESSION["email_usu"])){
 </head>
 <body>
 <div id="portada" class="padding-2">
-  <div class="recuadro-alu">
+  <div class="recuadro-alu" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
     <div class="flex">
       <h3 style="margin-right: 20%;"><b>Formulari de Professors</b></h3>
       <form action="./mostrar.php?id=prof" method="POST" enctype="multipart/form-data">
@@ -40,35 +42,35 @@ if(!isset($_SESSION["email_usu"])){
 <form class="row g-3 needs-validation" novalidate action="./recibirProfesores.php" method="POST" enctype="multipart/form-data" onsubmit="return validaFormulario();">
   <div class="form-row">
     <!-- Nombre -->
-    <div class="col-md-8 mb-3">
+    <div class="col-md-10 mb-3">
       <label for="validacionNombre">Nom</label>
-      <input type="text" name="nombre" class="form-control" id="validacionNombre" placeholder="Inserti el seu nom..." required>
+      <input type="text" name="nombre" class="form-control bg-transparent" style="color: white;" id="validacionNombre" placeholder="Inserti el seu nom..." required>
     </div>
     <!-- Primer apellido -->
-    <div class="col-md-8 mb-3">
+    <div class="col-md-10 mb-3">
       <label for="validacionApellido01">Primer Cognom</label>
-      <input type="text" name="1apellido" class="form-control" id="validacionApellido01" placeholder="Inserti el seu primer cognom..." required>
+      <input type="text" name="1apellido" class="form-control bg-transparent" style="color: white;" id="validacionApellido01" placeholder="Inserti el seu primer cognom..." required>
     </div>
     <!-- Segundo apellido -->
-    <div class="col-md-8 mb-3">
+    <div class="col-md-10 mb-3">
       <label for="validacionApellido02">Segon Cognom</label>
-      <input type="text" name="2apellido" class="form-control" id="validacionApellido02" placeholder="Inserti el seu segon cognom..." required>
+      <input type="text" name="2apellido" class="form-control bg-transparent" style="color: white;" id="validacionApellido02" placeholder="Inserti el seu segon cognom..." required>
     </div>
     <!-- Email -->
-    <div class="col-md-8 mb-3">
+    <div class="col-md-10 mb-2">
             <label for="validacionEmail">Email</label>
-            <input type="email" name="email" class="form-control" id="validacionEmail" value="" placeholder="Inserte el seu Email..." required>
+            <input type="email" name="email" class="form-control bg-transparent" style="color: white;" id="validacionEmail" value="" placeholder="Inserte el seu Email..." required>
             <small style="color: white;">El seu Email no es pot repetir amb cap altre registrat amb antelació.</small>
     </div>
     <!-- Teléfono -->
-    <div class="col-md-8 mb-3">
+    <div class="col-md-10 mb-3">
             <label for="validacionTel">Telèfon</label>
-            <input id="validacionTel" name="telf" class="form-control" type="text" maxlength="5" placeholder="00000...">
+            <input id="validacionTel" name="telf" class="form-control bg-transparent" style="color: white;" type="text" maxlength="5" placeholder="00000...">
     </div>
     <!-- Cursos -->
     <div class="form-group col-md-8 mb-3">
     <label>Grado</label><br>
-    <select name="grado" class=" btn-default btn-lg" id="select">
+    <select name="grado" class="btn-default btn-lg bg-transparent" id="select">
       <option selected value="" required>Tria una de les opcions...</option>
           <option value="1">Informàtica</option>
           <option value="2">Administració i finances</option>
