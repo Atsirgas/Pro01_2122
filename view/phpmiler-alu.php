@@ -26,7 +26,7 @@ if(!isset($_SESSION["email_usu"])){
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-if(isset($_POST['button'])){
+/* if(isset($_POST['button'])){ */
 //Load Composer's autoloader
 //require 'vendor/autoload.php';
 require("../phpmailer/PHPMailer.php");
@@ -49,8 +49,8 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'gtalayerojpg@gmail.com';                     //SMTP username
-    $mail->Password   = 'ASDasd123_';                               //SMTP password
+    $mail->Username   = 'gtalajpg@gmail.com';                     //SMTP username
+    $mail->Password   = 'Proyecto2022_CRUD';                               //SMTP password
     $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
 
     //Recipients
@@ -88,7 +88,7 @@ try {
     <?php
     /* echo "El missatge s'ha enviat correctament"; */
 } catch (Exception $e) {
-    /* echo "Error al enviar el missatge", $mail->ErrorInfo ; */
+    echo "Error al enviar el missatge", $mail->ErrorInfo ;
     ?>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
@@ -111,9 +111,9 @@ try {
     </script>
     <?php
 }
-}else{
+/* }else{
     header("Location:mostrar.php?id=alu");
-}
+} */
 ?>
 </div>
 </body>

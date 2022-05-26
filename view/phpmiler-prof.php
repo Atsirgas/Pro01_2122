@@ -45,8 +45,8 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'gtalayerojpg@gmail.com';                     //SMTP username
-    $mail->Password   = 'ASDasd123_';                               //SMTP password
+    $mail->Username   = 'gtalajpg@gmail.com';                     //SMTP username
+    $mail->Password   = 'Proyecto2022_CRUD';                               //SMTP password
     $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
 
     //Recipients
