@@ -309,7 +309,7 @@ $dept=mysqli_query($connection, $departamento); */
                     }
                     
                     echo '<br>';
-                    echo '<table class="table-hover">';
+                    echo '<table class="table-hover tabla">';
                     echo '<tr>';
                     echo '<th>ID</th>';
                     echo '<th>1r Cognom</th>';

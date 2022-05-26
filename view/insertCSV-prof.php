@@ -53,7 +53,7 @@ if(($fichero['size']<200*1024) && ($fichero['type']=="text/csv")){
                             $cont++;
                             continue;
                         }
-                        $campos = explode(";",$linea);
+                        $campos = explode(",",$linea);
                         // echo $campos[3];
                         // echo "<br>";
                         $id=$campos[0];
@@ -65,7 +65,7 @@ if(($fichero['size']<200*1024) && ($fichero['type']=="text/csv")){
                         /* echo $email; */
                         $dept=$campos[6];
                         if (!in_array($campos[5],$lista_emails)) {
-                            $sql = "INSERT INTO `tbl_professor` (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof`,`telf`,`dept`) VALUES ('$nombre', '$apellido1', '$apellido2', '$email', '$telefono', '$dept')";
+                            $sql = "INSERT INTO `tbl_professor` (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof`,`telf`,`dept`,`password_prof`) VALUES ('$nombre', '$apellido1', '$apellido2', '$email', '$telefono', '$dept','7110eda4d09e062aa5e4a390b0a572ac0d2c0220')";
                             $insert = mysqli_query($connection, $sql);
                             /* echo $sql; */
                             echo '<br>';

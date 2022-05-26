@@ -231,8 +231,12 @@ table {
 td,
 th {
     border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+    text-align: center;
+    padding: 6px;
+}
+
+th {
+    padding: 30px;
 }
 
 tr:nth-child(even) {
@@ -716,6 +720,7 @@ input[type="file"]:hover {
         padding-left: 4vw;
     }
     table {
+        display: block;
         overflow-x: auto;
     }
     #loged {
