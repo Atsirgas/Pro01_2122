@@ -318,7 +318,7 @@ $dept=mysqli_query($connection, $departamento); */
                     echo '<th>Telèfon</th>';
                     echo '<th>Email</th>';
                     echo '<th>DNI</th>';
-                    echo '<th style="width:100%;">Classe</th>';
+                    echo '<th>Classe</th>';
                     if($_SESSION['tipo']=="Administrador"){
                     echo '<th>Borrar</th>';
                     echo '<th>Modificar</th>';

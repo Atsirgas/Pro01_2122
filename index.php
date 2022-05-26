@@ -20,8 +20,8 @@
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
-					<div class="brand_logo_container">
-						<img src="./img/JPG.png" class="brand_logo" alt="Logo">
+					<div class="brand_logo_container transition">
+						<img src="./img/JPG.png" class="brand_logo transition" alt="Logo">
 					</div>
 				</div>
 				<div class="d-flex justify-content-center form_container">
@@ -30,19 +30,19 @@
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="correo" class="form-control input_user" placeholder="exemple@jpg.com"require>
+							<input type="text" name="correo" class="form-control input_user color" placeholder="exemple@jpg.com"require>
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="psw" class="form-control input_pass" placeholder="password"require>
+							<input type="password" name="psw" class="form-control input_pass color" placeholder="password"require>
 						</div>
 						<br>
 						<div class="form-group">								
 							<div class="custom-control custom-checkbox">
-							<input class="radioButton" type="radio" name="tipo" id="Adminitrador" value="Administrador" /> Admin/Secretari/a
-        					<input class="radioButton" type="radio" name="tipo" id="Profesor" value="Profesor" /> Professor<br><br>
+							<input class="radio" type="radio" name="tipo" id="Adminitrador" value="Administrador" /> Admin/Secretari/a
+        					<input class="radio" type="radio" name="tipo" id="Profesor" value="Profesor" /> Professor<br><br>
 							</div>
 						</div>
 							<div class="d-flex justify-content-center mt-3 login_container">
