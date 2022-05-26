@@ -96,7 +96,7 @@ $dept=mysqli_query($connection, $departamento); */
                     <nav class="navbar navbar-expand-lg navbar-dark ">
                         <div class="container-fluid">
                             <div class="padding-right">
-                                <img class="imagen-logo" id="myImg" src="../img/JPG.png" alt="Logo" > 
+                                <img class="imagen-logo transition" id="myImg" src="../img/JPG.png" alt="Logo" > 
                             </div>
                            
 

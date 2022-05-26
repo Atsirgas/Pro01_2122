@@ -46,7 +46,7 @@ if(!isset($_SESSION["email_usu"])){
 
                 if (!in_array($email,$lista_emails)){
                     /* echo "no esta repetido"; */
-                    $sql2 = "INSERT INTO `tbl_professor` (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof`,`telf`,`dept`) VALUES ('$name', '$apellido1', '$apellido2', '$email', '$telefono', '$grado')";
+                    $sql2 = "INSERT INTO `tbl_professor` (`nom_prof`, `cognom1_prof`,`cognom2_prof`,`email_prof`,`telf`,`dept`,`password_prof`) VALUES ('$name', '$apellido1', '$apellido2', '$email', '$telefono', '$grado', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220')";
                     $insert = mysqli_query($connection, $sql2);
                     ?>
                         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

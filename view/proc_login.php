@@ -17,7 +17,7 @@
     if(isset($_POST["button"])){
         if(isset($_POST["correo"])&& isset($_POST["psw"]) && isset($_POST['tipo'])){
             $tipo=$_POST['tipo'];
-            echo $tipo;
+            /* echo $tipo; */
             $correo=$_POST["correo"];
             $password=sha1($_POST["psw"]);
             
@@ -27,7 +27,7 @@
             $comprobar2="SELECT * FROM tbl_professor WHERE email_prof = '{$correo}' AND password_prof = '{$password}';";
             $cons2 = mysqli_query($connection,$comprobar2);
             $num2 = mysqli_num_rows($cons2);
-            echo $num2;
+            /* echo $num2; */
 
             if($num==1 && $tipo=="Administrador"){
                 session_start();
