@@ -88,7 +88,7 @@ if (isset($_GET['id'])=="prof"){
                 // // close the connection
                 // ftp_close($conn_id);
         } else {
-            echo "<script>window.alert('No se'ha pogut crear l'archiu')</script>";
+            echo "<script>window.alert('No s'ha pogut crear l'archiu')</script>";
             echo "<script>window.location.href='./mostrar.php?id=alu'</script>"; 
         }
         }
