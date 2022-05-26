@@ -27,6 +27,7 @@ include '../conexion.php';
 $fichero=$_FILES['fichero'];
 /* print_r($fichero); */
 /* echo $fichero['tmp_name']; */
+
 if(($fichero['size']<200*1024) && ($fichero['type']=="text/csv")){
 
     if (isset($_GET['id'])=="prof") {
@@ -71,14 +72,14 @@ if(($fichero['size']<200*1024) && ($fichero['type']=="text/csv")){
                             echo '<br>';
                             echo "<script type=\"text/javascript\">alert(\"Usuario '$nombre' agregado correctamente\");</script>"; 
                             } else{
-                                ?>
                                 
-                                <?php
                                 echo "<script type=\"text/javascript\">alert(\"Usuario '$nombre' repetido\");</script>"; 
+                                
                             }
                     
 
                     }
+                    echo "<script type=\"text/javascript\">window.location.href='mostrar.php?id=prof'</script>";
             
                 }
         }
@@ -107,7 +108,6 @@ if(($fichero['size']<200*1024) && ($fichero['type']=="text/csv")){
                 </script>
                 <?php
     }
-
 ?>
 </div>
 </body>

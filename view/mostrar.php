@@ -175,10 +175,10 @@ $dept=mysqli_query($connection, $departamento); */
 
                                         <div id="id01" class="modal2">
                                         <span onclick="document.getElementById('id01').style.display='none'" class="close2" title="Close Modal">×</span>
-                                        <form class="modal-content2 flex" action="/insertCSV-alu?id=alu.php">
+                                        <form class="modal-content2 flex" action="insertCSV-alu.php?id=alu"  method="post" enctype="multipart/form-data">
                                             <div class="container">
                                             <div class="drag-drop">
-                                                    <input type="file" multiple="multiple" id="photo" />
+                                                    <input type="file" name="fichero" />
                                                     <span class="fa-stack fa-2x">
                                                         <i class="fa fa-cloud fa-stack-2x bottom pulsating"></i>
                                                         <i class="fa fa-circle fa-stack-1x top medium"></i>

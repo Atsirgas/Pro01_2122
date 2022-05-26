@@ -1,2 +1,4 @@
-id;apellido1,apellido2,nombre,telefono,email
-
+id,apellido1,apellido2,nombre,telefono,email,dept
+10,Rodriguez,Carrasco,Juan,11112,juroca@jpg.com,1
+11,Pascual,Garcia,Juana,13112,jupaga@jpg.com,2
+12,Gonzalez,Diaz,Paula,12345,pagodi@jpg.com,3

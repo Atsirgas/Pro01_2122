@@ -45,7 +45,7 @@
             <script>
                 function aviso(url) {
                     Swal.fire({
-                            title: 'El correo o la contraseña son incorrectos',
+                            title: 'El correu o la contrasenya són incorrectes',
                             imageUrl: '../img/borrar.png',
                             imageWidth: 200,
                             imageHeight: 200,
