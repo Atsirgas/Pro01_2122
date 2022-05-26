@@ -94,7 +94,7 @@ if(!isset($_SESSION["email_usu"])){
         <option value="37">1r de Guía (Guía en el Medi Natural i Temps Lliure)</option>
         <option value="38">2n de Guía (Guía en el Medi Natural i Temps Lliure)</option>
     </select>
-    <input type="submit" class="btn btn-primary" style="float: left; margin-top: 3%;" value="Enviar">
+    <input type="submit" name="btn-enviar" class="btn btn-primary" style="float: left; margin-top: 3%;" value="Enviar">
     </div>
 </form>
 </div>

@@ -20,12 +20,13 @@ if(!isset($_SESSION["email_usu"])){
 
 
 <?php
+
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
+if(isset($_POST['button'])){
 //Load Composer's autoloader
 //require 'vendor/autoload.php';
 require("../phpmailer/PHPMailer.php");
@@ -109,6 +110,9 @@ try {
         aviso('../mostrar.php?id=alu');
     </script>
     <?php
+}
+}else{
+    header("Location:mostrar.php?id=alu");
 }
 ?>
 </div>

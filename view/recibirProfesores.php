@@ -20,6 +20,9 @@ if(!isset($_SESSION["email_usu"])){
     
     <?php
     include '../conexion.php';
+    if(isset($_POST['button'])){
+
+    
         $name=$_POST['nombre'];
         $apellido1=$_POST['1apellido'];
         $apellido2=$_POST['2apellido'];
@@ -94,6 +97,9 @@ if(!isset($_SESSION["email_usu"])){
                     </script>
                     <?php
                 }
+    }else{
+        header("Location:form-profesores.php");
+    }           
     ?>
     </div>
 </body>

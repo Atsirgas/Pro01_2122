@@ -343,9 +343,11 @@ $dept=mysqli_query($connection, $departamento); */
                         ?>
                         
                         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                        
                         <td><button class="btn btn-danger" onClick="aviso('./borrar.php?id=alu&id_alu=<?php echo $alumno['id_alumne'];?>' , '<?php echo $alumno['nom_alu'];?>');" ><img class="imagen-edit-borr" src="../img/trash.svg" alt=""></button></td>
                         <td><button class="btn btn-info" onClick="aviso2('./modificar.php?id=alu&clase=<?php echo $alumno['nom_classe'];?>&id_alu=<?php echo $alumno['id_alumne'];?>' , '<?php echo $alumno['nom_alu'];?>');" ><img class="imagen-edit-borr" src="../img/editar.png" alt=""></button></td>
                         <td><button class="btn btn-warning" onClick="avisocorreo('./enviarcorreo-alu.php?id=alu&id_alu=<?php echo $alumno['id_alumne'];?>' , '<?php echo $alumno['nom_alu'];?>');" ><img class="imagen-edit-borr" src="../img/email.svg" alt=""></button></td>
+                       
                         </tr>
                         <?php
                         }

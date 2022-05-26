@@ -22,7 +22,7 @@ if(!isset($_SESSION["email_usu"])){
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
+if(isset($_POST['button'])){
 //Load Composer's autoloader
 //require 'vendor/autoload.php';
 require("../phpmailer/PHPMailer.php");
@@ -107,7 +107,9 @@ try {
     </script>
     <?php
 }
-
+}else{
+    header("Location:mostrar.php?id=alu");
+}
 ?>
 </div>
 </body>

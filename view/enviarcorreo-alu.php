@@ -3,6 +3,7 @@ session_start();
 if(!isset($_SESSION["email_usu"])){
     header("Location:../index.php");
 }
+
 ?>
 <!doctype html>
 <html lang="es">
@@ -67,7 +68,7 @@ if(!isset($_SESSION["email_usu"])){
                                 cols="30" rows="5"></textarea>
                         </div>
                         <div class="form-group">
-                            <button class="btn-primary btn" type="submit">
+                            <button class="btn-primary btn" name="button" type="submit">
                                 Enviar
                             </button>
                         </div>

@@ -18,6 +18,8 @@ if(!isset($_SESSION["email_usu"])){
     <div id="portada">
 <?php
 include '../conexion.php';
+if(isset($_POST["btn-enviar"])){
+
 
 $select = "SELECT p.* , pt.nom_classe
 FROM tbl_alumne p 
@@ -120,7 +122,9 @@ if (!in_array($dni,$todosDNI) && !in_array($email,$todosEMAIL)){
             }
         }
 }
-
+}else{
+    header("Location:form-alumnos.php");
+}
 ?>
     </div>
 </body>
