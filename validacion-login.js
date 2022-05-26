@@ -3,15 +3,15 @@ var validaFormulario = function() {
     var password = document.getElementById("password");
     var validacion = true;
     if (email.value == null || email.value.length == 0 || /^\s+$/.test(email.value)) {
-        alert('[ERROR] "Email" debe rellenarse');
+        alert('[ERROR] "Email" deu omplir-se');
         validacion = false;
     } else if (email.value == null || email.value.length == 0 || !(/\S+@\S+\.\S+/.test(email.value))) {
-        alert('[ERROR] "Email" debe rellenarse con el formato correcto');
+        alert('[ERROR] "Email" deu omplir-se amb el format correcte');
         validacion = false
     }
 
     if (password.value === null || password.value === '') {
-        alert('[ERROR] "Contraseña" debe rellenarse');
+        alert('[ERROR] "Contrasenya" deu omplir-se');
         validacion = false;
     }
     var tipo = document.getElementsByName("tipo");
@@ -23,7 +23,7 @@ var validaFormulario = function() {
         }
     }
     if (!val) {
-        alert('[ERROR] Debe elegirse Profesor o Administrador');
+        alert('[ERROR] Deu escollir-se Professor o Administrador');
         return false;
     }
     if (!validacion) {
